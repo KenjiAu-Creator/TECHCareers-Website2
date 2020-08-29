@@ -3,7 +3,9 @@
   padding: 0;
   margin: 0;
 }
-/* Text meant only for screen readers. */
+/* Code taken from:
+ * https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
+ */
 .less-info {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);

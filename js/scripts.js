@@ -1,3 +1,4 @@
+// Document Element Initializations
 const education = document.querySelector("#education");
 const projects = document.querySelector("#projects");
 const work = document.querySelector("#work-exp");
@@ -7,6 +8,7 @@ const projectsSection = document.querySelector(".projects");
 const workSection = document.querySelector(".work-exp");
 const contactSection = document.querySelector(".contact");
 
+// Showing / Hiding information sections
 projects.addEventListener("click", () => {
   projectsSection.classList.remove("less-info");
   workSection.classList.add("less-info");
