@@ -54,3 +54,9 @@
   background-color: #3baaf5;
   display: inline-block;
 }
+
+textarea {
+  resize: none;
+  height: 100px;
+  width: 250px;
+}
