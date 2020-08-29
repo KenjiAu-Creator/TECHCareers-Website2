@@ -36,3 +36,9 @@ contact.addEventListener("click", () => {
   contactSection.classList.remove("less-info");
   educationSection.classList.add("less-info");
 });
+
+const form = document.querySelector("FORM");
+form.addEventListener("submit", () => {
+  const message = document.querySelector("TEXTAREA");
+  console.log(message.value);
+});
