@@ -19,6 +19,7 @@
   word-wrap: normal !important;
 }
 /* Styling begins */
+/* Timeline test code */
 .dates {
   display: inline-block;
   list-style-type: none;
@@ -55,8 +56,19 @@
   display: inline-block;
 }
 
+/* Contact form */
 textarea {
   resize: none;
   height: 100px;
   width: 250px;
+}
+
+/* Navigation */
+.nav-section {
+  display: inline;
+  background-color:blue;
+  border: black solid 1px;
+}
+#test1 {
+  background-color: red;
 }

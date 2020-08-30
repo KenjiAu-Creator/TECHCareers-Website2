@@ -7,6 +7,9 @@ const educationSection = document.querySelector(".education");
 const projectsSection = document.querySelector(".projects");
 const workSection = document.querySelector(".work-exp");
 const contactSection = document.querySelector(".contact");
+const supervisorInfo = document.querySelector("#supervisor");
+const bartenderInfo = document.querySelector("#bartender");
+const researchInfo = document.querySelector("#research")
 
 // Showing / Hiding main information sections
 projects.addEventListener("click", () => {
@@ -37,6 +40,23 @@ contact.addEventListener("click", () => {
   educationSection.classList.add("less-info");
 });
 
+/* Extra info in Work Exp */
+supervisorInfo.addEventListener("click", () => {
+  const supervisorExpand = document.querySelector("#supervisor-more");
+  supervisorExpand.classList.remove("less-info"); 
+});
+
+bartenderInfo.addEventListener("click", () => {
+  const bartenderExpand = document.querySelector("#bartender-more");
+  bartenderExpand.classList.remove("less-info");
+});
+
+researchInfo.addEventListener("click", () => {
+  const researchExpand = document.querySelector("#research-more");
+  researchExpand.classList.remove("less-info");
+});
+
+/* Contact form submit */
 const form = document.querySelector("FORM");
 form.addEventListener("submit", () => {
   const message = document.querySelector("TEXTAREA");

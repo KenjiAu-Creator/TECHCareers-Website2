@@ -15,7 +15,7 @@
   </section>
   <section id="information">
     <!-- Only show one blurb at a time, JS on click to add/ remove class to show / hide desired blurb -->
-    <ul>
+    <ul id="test1">
       <li class="nav-section" id="projects">Projects</li>
       <li class="nav-section" id="education">Education</li>
       <li class="nav-section" id="work-exp">Work Experience</li>
@@ -58,20 +58,35 @@
     </section>
     <section class="work-exp less-info">
       <ul>
-        <li>
+        <li id="supervisor">
+          <span>Supervisor</span><br>
           <span>Dream Tea House</span><br>
-          <span>Supervisor</span>
           <span>March 2019-Present</span>
+          <ul class="less-info" id="supervisor-more">
+            <li>Coordinated and led teams of 4-6 efficiently to serve over 200 customers daily.</li>
+            <li>Tracked inventory for forecasts to ensure smooth operation resulting in ~$2k sales daily.</li>
+            <li>Trained and mentored 6 new hires to ensure compliance in corporate standards and food handling safety procedures.</li>
+          </ul>
         </li>
-        <li>
+        <li id="bartender">
+          <span>Bartender / Assistant Supervisor</span><br>
           <span>Dream Tea House</span><br>
-          <span>Bartender / Assistant Supervisor</span>
           <span>May 2017 - March 2019</span>
+          <ul class="less-info" id="bartender-more">
+            <li>Strong multi-tasking skills; recognized by management for efficient service.</li>
+            <li>Proven ability to work within small teams to provide accurate and efficient service.</li>
+            <li>Handled organization of inventory to increase storage capacity with limited space.</li>
+          </ul>
         </li>
-        <li>
+        <li id="research">
+          <span>Research Assistant</span><br>
           <span>University of Alberta School of Dentistry</span><br>
-          <span>Research Assistant</span>
           <span>September - December 2015</span>
+          <ul class="less-info" id="research-more">
+            <li>Diagnosed and maintained equipment worth $5k resulting in strong analytical skills.</li>
+            <li>Wrote technical reports and manuals to provide equipment handling procedures and diagnostics.</li>
+            <li>Attended bi-weekly meetings with stakeholders to provide update presentations.</li>
+          </ul>
         </li>
       </ul>
     </section>
