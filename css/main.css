@@ -66,9 +66,5 @@ textarea {
 /* Navigation */
 .nav-section {
   display: inline;
-  background-color:blue;
   border: black solid 1px;
-}
-#test1 {
-  background-color: red;
 }
