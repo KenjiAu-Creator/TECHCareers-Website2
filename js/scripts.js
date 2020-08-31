@@ -17,6 +17,7 @@ projects.addEventListener("click", () => {
   workSection.classList.add("less-info");
   contactSection.classList.add("less-info");
   educationSection.classList.add("less-info");
+  projects.scrollIntoView();
 });
 
 education.addEventListener("click", () => {
@@ -24,6 +25,7 @@ education.addEventListener("click", () => {
   workSection.classList.add("less-info");
   contactSection.classList.add("less-info");
   educationSection.classList.remove("less-info");
+  education.scrollIntoView();
 });
 
 work.addEventListener("click", () => {
@@ -31,6 +33,7 @@ work.addEventListener("click", () => {
   workSection.classList.remove("less-info");
   contactSection.classList.add("less-info");
   educationSection.classList.add("less-info");
+  work.scrollIntoView();
 });
 
 contact.addEventListener("click", () => {
@@ -38,6 +41,7 @@ contact.addEventListener("click", () => {
   workSection.classList.add("less-info");
   contactSection.classList.remove("less-info");
   educationSection.classList.add("less-info");
+  contact.scrollIntoView();
 });
 
 /* Extra info in Work Exp */
