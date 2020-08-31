@@ -13,19 +13,20 @@
 <body>
   <h1 class="less-info">Kenji's Portfolio</h1>
   <section id="landing-photo">
-    <img src="imgs/person-bridge.jpg" alt="photo-of-watch">
+    <h2 class="less-info">Landing Photo</h2>
+    <img src="imgs/person-bridge.jpg" alt="mountain-view-with-person-sitting-on-bridge">
   </section>
   <section id="about-me">
     <h3>Hello, I'm Kenji.</h3>
     <p>I'm a detailed-oriented software engineer passionate about creating applications.</p>
     <p>I'm a student of The Odin Projects Full Stack Ruby on Rails and TECHCareers Software developer program. I have
       experience developing web applications, from simple landing pages, to creating applications that provide quality
-      of life changes by using API's from other services. I enjoy doing back-end web application work primarily.</p>
+      of life changes by using API's from other services. I primarily enjoy doing back-end web application work</p>
     <p>I am also currently a registered Engineer-in-Training with The Association of Professional Engineers and
       Geoscientists of Alberta (APEGA).
     <p>I love learning about technology. I consider every type of work an on-going learning experience. I'm
-      looking for opportunities to demostrate my skills and knowledge in creating applications.</p>
-    <p>When I'm not coding, I'm probably out bouldering, or snowboarding.</p>
+      looking for opportunities to demostrate my skills and knowledge!</p>
+    <p>When I'm not coding, I'm probably out bouldering, snowboarding or just out in the mountain!</p>
   </section>
   <section id="information">
     <h2 id="projects">Projects</h2>
@@ -106,9 +107,9 @@
     <h2 id="work-exp">Work Experience</h2>
     <section class="work-exp less-info">
       <h2 class="less-info">Work Experience</h2>
-      <ul>
+      <ul id="job-info">
         <li id="supervisor">
-          <span>Supervisor</span><br>
+          <span class="job-title">Supervisor</span><br>
           <span>Dream Tea House</span><br>
           <span>March 2019-Present</span>
           <ul class="less-info" id="supervisor-more">
@@ -119,7 +120,7 @@
           </ul>
         </li>
         <li id="bartender">
-          <span>Bartender / Assistant Supervisor</span><br>
+          <span class="job-title">Bartender / Assistant Supervisor</span><br>
           <span>Dream Tea House</span><br>
           <span>May 2017 - March 2019</span>
           <ul class="less-info" id="bartender-more">
@@ -129,7 +130,7 @@
           </ul>
         </li>
         <li id="research">
-          <span>Research Assistant</span><br>
+          <span class="job-title">Research Assistant</span><br>
           <span>University of Alberta School of Dentistry</span><br>
           <span>September - December 2015</span>
           <ul class="less-info" id="research-more">
@@ -143,9 +144,11 @@
     <h2 id="contact">Contact Me</h2>
     <section class="contact less-info">
       <h2>Get In Touch</h2>
-      <form>
+      <form action="mailto:kenji1@ualberta.ca?body=message" method="post" enctype="text/plain">
         <label for="name">Name:</label><br>
         <input type="text" id="name"><br>
+        <label for="clientEmail">Your Email:</label><br>
+        <input type="text" id="clientEmail"><br>
         <label for="subject">Subject:</label><br>
         <input type="text" id="subject"><br>
         <label for="message">Message:</label><br>

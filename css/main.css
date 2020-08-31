@@ -67,6 +67,7 @@ textarea {
 }
 /* Mobile first */
 body {
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: 
@@ -81,6 +82,22 @@ body {
   "contact"
   "contact-more"
   ;
+} 
+/* About me */
+#about-me {
+  background-color: #69B7BF;
+  color: #261101;
+  width: 100%;
+  grid-area: about;
+}
+#about-me > h3 {
+  width: 300px;
+  font-size: 25px;
+  padding: 30px 0 10px 30px;
+}
+p {
+  padding: 0 30px 15px 30px;
+  font-size: 14px;
 }
 #landing-photo {
   padding: 0;
@@ -96,32 +113,32 @@ img {
   opacity: 0.55;
   display: block;
 }
-/* Navigation */
-.nav-section {
-  /* display: block;
-  border: black solid 1px; */
-  font-size: 30px;
-}
-/* About me */
-#about-me {
-  background-color: #69B7BF;
-  color: #261101;
-  font-size: 16px;
-  width: 100%;
-  grid-area: about;
-}
-#about-me > h3 {
-  width: 300px;
-  font-size: 30px;
-  padding: 30px 0 10px 0;
-  border-bottom: solid #261101 5px;
-}
 /* Extra information */
 #information {
   background-color: #094950;
   color: rgb(236, 236, 222);
   padding-bottom: 200px;
   width: 100%;
+}
+h2 {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+h3 {
+  padding-left: 15px;
+}
+form {
+  padding-left: 15px;
+}
+ul {
+  padding-left: 15px;
+}
+#job-info > li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+.job-title {
+  font-weight: bold;
 }
 #projects {
   grid-area: projects;
@@ -141,11 +158,9 @@ img {
 .work-exp {
   grid-area: work-more;
 }
-
 #contact {
   grid-area: contact;
 }
-
 .contact {
   grid-area: contact-more;
 }
