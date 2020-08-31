@@ -19,6 +19,9 @@
   word-wrap: normal !important;
 }
 /* Styling begins */
+body {
+  font-family: 'Overpass', sans-serif;
+}
 /* Timeline test code */
 .dates {
   display: inline-block;
@@ -67,4 +70,22 @@ textarea {
 .nav-section {
   display: inline;
   border: black solid 1px;
+}
+
+#landing-photo {
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+}
+
+img {
+  width: 100%;
+  opacity: 0.55;
+}
+#about-me {
+  background-color: #69B7BF;
+}
+#information {
+  background-color: #094950;
+  padding-bottom: 200px;
 }
