@@ -63,6 +63,12 @@ researchInfo.addEventListener("click", () => {
 /* Contact form submit */
 const form = document.querySelector("FORM");
 form.addEventListener("submit", () => {
-  const message = document.querySelector("TEXTAREA");
-  console.log(message.value);
+  /* Thank you to Fahad Hameed for the necessary documents on the mailTo function and how to build the href. */
+  /* https://stackoverflow.com/questions/10172499/mailto-using-javascript */
+  /* Also took the window.location.href code from stack overflow */
+  const message = document.querySelector("TEXTAREA").value;
+  const subject = document.querySelector("#subject").value;
+  const name = document.querySelector("#name").value;
+  const emailString = `mailTo:kenji1@ualberta.ca?subject=${subject}&body=FROM:%20${name}%0D%0A${subject}%0D%0A`
+  window.location.href = emailString;
 });
