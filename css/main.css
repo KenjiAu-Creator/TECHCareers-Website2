@@ -169,46 +169,92 @@ ul {
 /* Using Grid design, Thank you Krizstina for the idea */
 .timeline {
   display: grid;
-  grid-template-columns: 45% 1% 48%;
+  grid-template-columns: 49% 1% 50%;
   grid-template-areas: 
-  "1 circle 1-1"
-  ". 2 ."
-  "3 . ."
-  ". 4 ."
-  "5 . .";
+  "1      circle-1 date-1"
+  "date-2 circle-2 2"
+  "3      circle-3 date-3"
+  "date-4 circle-4 4"
+  "5      circle-5 date-5";
 }
-
-section #t1 {
+#education-1 {
   grid-area: 1;
+  border-radius: 5%;
 }
-
-#t2 {
+#education-2 {
   grid-area: 2;
+  border-left: solid yellow 9px;
 }
-#t3 {
+#education-3 {
   grid-area: 3;
 }
-#t4 {
+#education-4 {
   grid-area: 4;
+  border-left: solid yellow 9px;
 }
-#t5 {
+#education-5 {
   grid-area: 5;
 }
-#t1-1 {
-  border-left: solid yellow 10px;
-  grid-area: 1-1;
-  padding-left: 20px;
-  padding-top: 15px;
+#date-1 {
+  grid-area: date-1;
+  border-left: solid yellow 9px;
+}
+#date-2 {
+  grid-area: date-2;
+}
+#date-3 {
+  grid-area: date-3;
+  border-left: solid yellow 9px;
+}
+#date-4 {
+  grid-area: date-4;
+}
+#date-5 {
+  grid-area: date-5;
+  border-left: solid yellow 9px;
+}
+.date {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .circle {
   overflow: visible;
   border-radius: 100%;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   grid-area:circle;
-  background-color: red;
-  margin-top: 30px;
+  background-color: rgb(190, 7, 7);
+  margin-top: 45px;
   z-index: 2;
+}
+.left {
+  padding-left: 40px;
+}
+.right {
+  padding-left: 15px;
+}
+#circle-1 {
+  grid-area: circle-1;
+}
+#circle-2 {
+  grid-area: circle-2;
+}
+#circle-3 {
+  grid-area: circle-3;
+}
+#circle-4 {
+  grid-area: circle-4;
+}
+#circle-5 {
+  grid-area: circle-5;
+}
+.education-point {
+  padding-right: 10px;
+}
+.education-point > p {
+  background-color: grey;
+  border-radius: 5%;
+  padding-top: 5px;
 }
 /* Work done for desktop view */
 /* Navigation */
