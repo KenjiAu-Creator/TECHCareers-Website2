@@ -107,7 +107,7 @@ p {
   height: auto;
   grid-area: photo;
 }
-img {
+.photo-top {
   width: 100%;
   height: auto;
   opacity: 0.55;
@@ -141,7 +141,7 @@ ul {
 .job-title {
   font-weight: bold;
 }
-#projects {
+#projects-title {
   grid-area: projects;
 }
 .projects {
@@ -165,7 +165,17 @@ ul {
 .contact {
   grid-area: contact-more;
 }
-
+/* Projects */
+#project-head {
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+.project-photo {
+  width: 375px;
+  height: auto;
+  padding-left: 20px;
+}
 /* Time line */
 /* Using Grid design, Thank you Krizstina for the idea */
 .timeline {

@@ -1,6 +1,6 @@
 // Document Element Initializations
 const education = document.querySelector("#education");
-const projects = document.querySelector("#projects");
+const projects = document.querySelector("#projects-title");
 const work = document.querySelector("#work-exp");
 const contact = document.querySelector("#contact");
 const educationSection = document.querySelector(".education");
