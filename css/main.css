@@ -102,7 +102,7 @@ p {
 #landing-photo {
   padding: 0;
   margin: 0;
-  overflow: visible;
+  overflow: hidden;
   width: 100vw;
   height: auto;
   grid-area: photo;
@@ -110,7 +110,8 @@ p {
 .photo-top {
   width: 100%;
   height: auto;
-  opacity: 0.55;
+  overflow: hidden;
+  opacity: 0.70;
   display: block;
 }
 /* Extra information */
@@ -171,11 +172,35 @@ ul {
   padding-bottom: 20px;
   text-decoration: none;
 }
+#pe-photos {
+  display: grid;
+  grid-template-columns: 150px 100px;
+  grid-template-areas: 
+  "p1 p2";
+}
+#pe1 {
+  grid-area: p1;
+}
+#pe2 {
+  grid-area: p2;
+  align-self: end;
+}
 .project-photo {
-  width: 375px;
+  width: 330px;
   height: auto;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
+.project-photo {
+  width: 200px;
+  height: auto;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#pe-photos #pe2 {
+  width: 125px;
+  height: auto;
+} 
 /* Time line */
 /* Using Grid design, Thank you Krizstina for the idea */
 .timeline {
@@ -307,3 +332,61 @@ ul {
   color: rgb(236, 236, 222);
   padding-bottom: 200px;
 } */
+@media screen and (min-width: 600px) {
+  #landing-photo {
+    height: 50vh;
+  }
+  .photo-top {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    opacity: 0.70;
+    display: block;
+  }
+  #pe-photos {
+    display: grid;
+    grid-template-columns: 275px 100px;
+    grid-template-areas: 
+    "p1 p2";
+  }
+  #pe1 {
+    grid-area: p1;
+  }
+  #pe2 {
+    grid-area: p2;
+    align-self: end;
+  }
+  #pe-photos #pe2 {
+    width: 250px;
+    height: auto;
+  } 
+  .project-photo {
+    width: 330px;
+    height: auto;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  #landing-photo {
+    height: 65vh;
+  }
+  #pe-photos {
+    display: grid;
+    grid-template-columns: 275px 100px;
+    grid-template-areas: 
+    "p1 p2";
+  }
+
+  #pe1 {
+    grid-area: p1;
+  }
+  #pe2 {
+    grid-area: p2;
+    align-self: end;
+  }
+  #pe-photos #pe2 {
+    width: 330px;
+    height: auto;
+  } 
+}
