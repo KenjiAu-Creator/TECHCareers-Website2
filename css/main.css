@@ -30,6 +30,7 @@ body {
   grid-template-areas: 
   "photo"
   "about"
+  "skills"
   "education"
   "projects-more"
   "projects"
@@ -39,23 +40,8 @@ body {
   "contact"
   "contact-more"
   ;
-} 
-/* About me */
-#about-me {
-  background-color: #69B7BF;
-  color: #261101;
-  width: 100%;
-  grid-area: about;
 }
-#about-me > h3 {
-  width: 300px;
-  font-size: 25px;
-  padding: 30px 0 10px 30px;
-}
-p {
-  padding: 0 30px 15px 30px;
-  font-size: 14px;
-}
+/* Landing */
 #landing-photo {
   background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg");
   background-size: cover;
@@ -82,6 +68,36 @@ p {
   color: white;
   padding: 15px;
   letter-spacing: 3px;
+}
+/* About me */
+#about-me {
+  background-color: #69B7BF;
+  color: #261101;
+  width: 100%;
+  grid-area: about;
+}
+#about-me > h3 {
+  width: 300px;
+  font-size: 25px;
+  padding: 30px 0 10px 20px;
+}
+p {
+  padding: 0 30px 15px 30px;
+  font-size: 14px;
+}
+#skills {
+  grid-area: skills;
+  background-image: url("https://images.pexels.com/photos/163163/sackcloth-sackcloth-textured-laptop-ipad-163163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  width: 100vw;
+  height: 35vh;
+  color: white;
+}
+#skills > p {
+  font-size: 14px;
+}
+#skills > ul > li {
+  margin-left: 50px;
 }
 /* Extra information */
 #information {
@@ -157,7 +173,7 @@ ul {
 .project-photo {
   width: 330px;
   height: auto;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-bottom: 20px;
 }
 .project-photo {
@@ -271,6 +287,14 @@ ul {
   size: 10000px;
 }
 /* Contact form */
+#get-in-touch {
+  padding-top: 10px;
+  text-decoration: none;
+  text-emphasis: none;
+}
+form {
+  padding-top: 10px;
+}
 textarea {
   resize: none;
   height: 100px;
@@ -354,7 +378,7 @@ textarea {
   }
   #landing {
     margin-top: 40%;
-    width: 50%;
+    width: 55%;
     font-size: 55px;
     letter-spacing: 11px;
   }
@@ -394,13 +418,14 @@ textarea {
     border-radius: 10px;
   }
 }
-@media screen and (min-width: 1440px) {
+
+@media screen and (min-width: 1400px) {
   #landing-photo {
     background-position-y: center;
     height: 75vh;
   }
   #landing {
-    margin-top: 15%;
+    margin-top: 18%;
     width: 50%;
     font-size: 55px;
     letter-spacing: 11px;
