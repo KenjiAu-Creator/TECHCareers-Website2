@@ -97,6 +97,7 @@ p {
   font-size: 14px;
 }
 #skills > ul > li {
+  margin-top: 5px;
   margin-left: 50px;
 }
 /* Extra information */
