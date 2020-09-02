@@ -22,12 +22,6 @@
 body {
   font-family: 'Overpass', sans-serif;
 }
-/* Contact form */
-textarea {
-  resize: none;
-  height: 100px;
-  width: 250px;
-}
 /* Mobile first */
 body {
   width: 100%;
@@ -63,19 +57,31 @@ p {
   font-size: 14px;
 }
 #landing-photo {
+  background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
   padding: 0;
   margin: 0;
   overflow: hidden;
   width: 100vw;
-  height: auto;
+  height: 60vh;
   grid-area: photo;
+  opacity: 0.7;
 }
-.photo-top {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  opacity: 0.70;
-  display: block;
+#landing {
+  text-align: center;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 800;
+  margin-top: 40%;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  letter-spacing: 3px;
 }
 /* Extra information */
 #information {
@@ -264,6 +270,12 @@ ul {
   overflow: visible;
   size: 10000px;
 }
+/* Contact form */
+textarea {
+  resize: none;
+  height: 100px;
+  width: 250px;
+}
 /* Social Contact */
 #connect {
   padding-top: 15px;
@@ -284,6 +296,11 @@ ul {
 @media screen and (min-width: 600px) {
   #landing-photo {
     height: 50vh;
+  }
+  #landing {
+    margin-top: 40%;
+    font-size: 25px;
+    letter-spacing: 10px;
   }
   .photo-top {
     width: 100%;
@@ -332,7 +349,61 @@ ul {
 }
 @media screen and (min-width: 1080px) {
   #landing-photo {
-    height: 65vh;
+    background-position-y: center;
+    height: 75vh;
+  }
+  #landing {
+    margin-top: 40%;
+    width: 50%;
+    font-size: 55px;
+    letter-spacing: 11px;
+  }
+  #pe-photos {
+    display: grid;
+    grid-template-columns: 275px 100px;
+    grid-template-areas: 
+    "p1 p2";
+  }
+
+  #pe1 {
+    grid-area: p1;
+  }
+  #pe2 {
+    grid-area: p2;
+    align-self: end;
+  }
+  #pe-photos #pe2 {
+    width: 330px;
+    height: auto;
+  }
+  /* Time line */
+  .timeline {
+    display: grid;
+    grid-template-columns: 44% 1% 54%;
+    grid-template-areas: 
+    "1      circle-1 date-1"
+    "date-2 circle-2 2"
+    "3      circle-3 date-3"
+    "date-4 circle-4 4"
+    "5      circle-5 date-5";
+  }
+  .circle {
+    margin-top: 25px;
+  }
+  .education-point > p {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #landing-photo {
+    background-position-y: center;
+    height: 75vh;
+  }
+  #landing {
+    margin-top: 15%;
+    width: 50%;
+    font-size: 55px;
+    letter-spacing: 11px;
   }
   #pe-photos {
     display: grid;
