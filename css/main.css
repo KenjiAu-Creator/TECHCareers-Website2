@@ -64,8 +64,8 @@ body {
   text-decoration: none;
   font-weight: 800;
   margin-top: 40%;
-  background-color: black;
-  color: white;
+  background-color: #012326;
+  color: #e7fbff;
   padding: 15px;
   letter-spacing: 3px;
 }
@@ -85,20 +85,26 @@ p {
   padding: 0 30px 15px 30px;
   font-size: 14px;
 }
+/* Tech Stack Section */
 #skills {
   grid-area: skills;
   background-image: url("https://images.pexels.com/photos/163163/sackcloth-sackcloth-textured-laptop-ipad-163163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   width: 100vw;
   height: 35vh;
-  color: white;
+  color: rgb(233, 229, 229);
 }
 #skills > p {
   font-size: 14px;
 }
-#skills > ul > li {
+#skills > section > ul > li {
   margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 40px;
+}
+#development,
+#tool {
+  display: inline-block;
+  vertical-align: top;
 }
 /* Extra information */
 #information {
@@ -275,7 +281,7 @@ ul {
   padding-right: 10px;
 }
 .education-point > p {
-  background-color: grey;
+  background-color: rgb(124, 118, 118);
   border-radius: 5%;
   padding-top: 5px;
 }
@@ -356,6 +362,9 @@ textarea {
     height: auto;
     padding-left: 20px;
     padding-bottom: 20px;
+  }
+  #information #education {
+    margin-bottom: 10px;
   }
   /* Time line */
   .timeline {
