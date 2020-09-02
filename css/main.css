@@ -69,7 +69,7 @@ body {
   padding: 15px;
   letter-spacing: 3px;
 }
-/* About me */
+/* About Me Section */
 #about-me {
   background-color: #69B7BF;
   color: #261101;
@@ -106,7 +106,7 @@ p {
   display: inline-block;
   vertical-align: top;
 }
-/* Extra information */
+/* Extra information Section */
 #information {
   background-color: #094950;
   color: rgb(236, 236, 222);
@@ -158,7 +158,7 @@ ul {
 .contact {
   grid-area: contact-more;
 }
-/* Projects */
+/* Projects Expanded Section */
 #project-head {
   font-size: 20px;
   padding-bottom: 20px;
@@ -193,7 +193,7 @@ ul {
   width: 125px;
   height: auto;
 } 
-/* Time line */
+/* Education & Time line */
 /* Using Grid design, Thank you Krizstina for the idea */
 .timeline {
   display: grid;
@@ -307,7 +307,7 @@ textarea {
   height: 100px;
   width: 250px;
 }
-/* Social Contact */
+/* Social & Contact Section */
 #connect {
   padding-top: 15px;
 }
@@ -324,6 +324,8 @@ textarea {
 #linkedin {
   width: 100px;
 }
+
+/* Tablet view */
 @media screen and (min-width: 600px) {
   #landing-photo {
     height: 50vh;
@@ -381,6 +383,8 @@ textarea {
     margin-top: 25px;
   }
 }
+
+/* Small Laptop view */
 @media screen and (min-width: 1080px) {
   #landing-photo {
     background-position-y: center;
@@ -429,6 +433,7 @@ textarea {
   }
 }
 
+/* Desktop View */
 @media screen and (min-width: 1400px) {
   #landing-photo {
     background-position-y: center;
