@@ -47,7 +47,7 @@ contact.addEventListener("click", () => {
 /* Extra info in Work Exp */
 supervisorInfo.addEventListener("click", () => {
   const supervisorExpand = document.querySelector("#supervisor-more");
-  supervisorExpand.classList.remove("less-info"); 
+  supervisorExpand.classList.remove("less-info");
 });
 
 bartenderInfo.addEventListener("click", () => {
@@ -60,6 +60,21 @@ researchInfo.addEventListener("click", () => {
   researchExpand.classList.remove("less-info");
 });
 
+/* Profanity filter */
+function filter(message) {
+  /* Check message for any profanity
+   * If it contains a swear word then return true
+   * else return false
+   */
+  const p = RegExp(`( ass)|^(ass)|^(shit)|( shit)|^(bitch)|( bitch)|^(bastard)|( bastard)|^(anal)|( anal)|^(blowjob)|( blowjob)|^(cock)|( cock)`);
+  if (p.test(message)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
 /* Contact form submit */
 const form = document.querySelector("FORM");
 form.addEventListener("submit", () => {
@@ -67,8 +82,14 @@ form.addEventListener("submit", () => {
   /* https://stackoverflow.com/questions/10172499/mailto-using-javascript */
   /* Also took the window.location.href code from stack overflow */
   const message = document.querySelector("TEXTAREA").value;
-  const subject = document.querySelector("#subject").value;
-  const name = document.querySelector("#name").value;
-  const emailString = `mailTo:kenji1@ualberta.ca?subject=${subject}&body=FROM:%20${name}%0D%0A${subject}%0D%0A`
-  window.location.href = emailString;
+  if (!filter(message)) {
+    const subject = document.querySelector("#subject").value;
+    const name = document.querySelector("#name").value;
+    const emailString = `mailTo:kenji1@ualberta.ca?subject=${subject}&body=FROM:%20${name}%0D%0A${message}%0D%0A`
+    window.location.href = emailString;
+  }
+  else {
+    event.preventDefault();
+    alert("Please be more professional in your request. No profanity please.");
+  }
 });
