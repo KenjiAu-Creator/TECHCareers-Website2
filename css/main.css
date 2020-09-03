@@ -193,7 +193,7 @@ ul {
   width: 125px;
   height: auto;
 } 
-/* Education & Time line */
+/* Education & Timeline */
 /* Using Grid design, Thank you Krizstina for the idea */
 .timeline {
   display: grid;
@@ -254,7 +254,6 @@ ul {
   background-color: rgb(190, 7, 7);
   margin-top: 45px;
   z-index: 2;
-  transform: translateX(-1px);
 }
 .left {
   padding-left: 30px;
@@ -285,13 +284,8 @@ ul {
   border-radius: 5%;
   padding-top: 5px;
 }
-.fas fa-laptop-code {
-  justify-self: center;
-  width: 20px;
-}
-.fas fa-university {
-  overflow: visible;
-  size: 10000px;
+.icon {
+  transform: translateX(1px) translateY(3px);
 }
 /* Contact form */
 #get-in-touch {
@@ -417,11 +411,11 @@ textarea {
   }
   /* Time line */
   .timeline {
-    width: 80%;
+    width: 70%;
     margin-right: auto;
     margin-left: auto;
     display: grid;
-    grid-template-columns: 44% 2% 54%;
+    grid-template-columns: 44% 2% 48%;
     grid-template-areas: 
     "1      circle-1 date-1"
     "date-2 circle-2 2"
@@ -444,7 +438,7 @@ textarea {
     transform: translateX(2px) translateY(3px);
   }
   .left > span {
-    padding-left: 100px;
+    padding-left: 80px;
   }
   .right > span {
     padding-left: 15px;
