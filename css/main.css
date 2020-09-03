@@ -488,7 +488,13 @@ textarea {
   }
   .circle {
     margin-top: 25px;
-    transform: translateX(1px);
+    transform: translateX(-2px);
+  }
+  .icon {
+    transform: translateX(1px) translateY(3px);
+  }
+  .education-point > p {
+    border-radius: 5px;
   }
   /* Work Exp */
   #job-info {
@@ -520,7 +526,7 @@ textarea {
   }
   #landing {
     margin-top: 40%;
-    width: 55%;
+    width: 60%;
     font-size: 55px;
     letter-spacing: 11px;
   }
@@ -542,7 +548,7 @@ textarea {
     width: 330px;
     height: auto;
   }
-  /* Time line */
+  /* Timeline */
   .timeline {
     width: 70%;
     margin-right: auto;
