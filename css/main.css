@@ -360,6 +360,7 @@ textarea {
   width: 250px;
 }
 input {
+  margin: 5px 0;
   display: block;
 }
 textarea {
@@ -408,7 +409,9 @@ textarea {
   }
   /* Tech stack section */
   #skills > h2 {
-    margin-left: 25px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #skills > p {
     margin-right: auto;
@@ -530,13 +533,24 @@ textarea {
     font-size: 55px;
     letter-spacing: 11px;
   }
+  #about-me > p {
+    width: 85%;
+  }
+  /* Tech Stack Section */
+  #skills > p {
+    font-size: 18px;
+    width: 85%;
+  }
+  #tool {
+    margin-left: 75px;
+  }
+  /* Projects Section */
   #pe-photos {
     display: grid;
     grid-template-columns: 275px 100px;
     grid-template-areas: 
     "p1 p2";
   }
-
   #pe1 {
     grid-area: p1;
   }
@@ -547,6 +561,12 @@ textarea {
   #pe-photos #pe2 {
     width: 330px;
     height: auto;
+  }
+  .projects > section > p {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px 0;
   }
   /* Timeline */
   .timeline {
@@ -564,7 +584,7 @@ textarea {
   }
   .circle {
     margin-top: 25px;
-    transform: translateX(8px) translateY(2px);
+    transform: translateX(6px) translateY(2px);
   }
   .education-point > p {
     border-radius: 10px;
@@ -577,12 +597,20 @@ textarea {
     transform: translateX(2px) translateY(3px);
   }
   .left > span {
-    padding-left: 80px;
+    padding-left: 70px;
   }
   .right > span {
     padding-left: 15px;
   }
+  /* Contact */
+  .contact > h2 {
+    width: 87.5%;
+  }
+  form {
+    width: 85%;
+  }
 }
+
 /* Medium desktop view */
 @media screen and (min-width: 1366px) {
   #landing-photo {
@@ -595,52 +623,26 @@ textarea {
     font-size: 55px;
     letter-spacing: 11px;
   }
-}
-/* Big desktop View */
-@media screen and (min-width: 1400px) {
-  #landing-photo {
-    background-position-y: center;
-    height: 75vh;
+  /* Tech Stack Section */
+  #tool {
+    margin-left: 100px;
   }
-  #landing {
-    margin-top: 18%;
-    width: 50%;
-    font-size: 55px;
-    letter-spacing: 11px;
-  }
-  #pe-photos {
-    display: grid;
-    grid-template-columns: 275px 100px;
-    grid-template-areas: 
-    "p1 p2";
-  }
-
-  #pe1 {
-    grid-area: p1;
-  }
-  #pe2 {
-    grid-area: p2;
-    align-self: end;
-  }
-  #pe-photos #pe2 {
-    width: 330px;
-    height: auto;
-  }
-  /* Time line */
-  .timeline {
-    display: grid;
-    grid-template-columns: 44% 1% 54%;
-    grid-template-areas: 
-    "1      circle-1 date-1"
-    "date-2 circle-2 2"
-    "3      circle-3 date-3"
-    "date-4 circle-4 4"
-    "5      circle-5 date-5";
-  }
+  /* Timeline */
   .circle {
-    margin-top: 25px;
+    transform: translateX(11px) translateY(1px);
   }
   .education-point > p {
-    border-radius: 10px;
+    margin-top: 15px;
+  }
+}
+
+/* Big desktop View */
+@media screen and (min-width: 1920px) {
+  /* Tech Stack Section */
+  #tool {
+    margin-left: 200px;
+  }
+  .circle {
+    transform: translateX(19px) translateY(2px);
   }
 }
