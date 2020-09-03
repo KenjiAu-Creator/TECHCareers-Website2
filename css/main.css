@@ -157,7 +157,7 @@ p {
 #information {
   background-color: #094950;
   color: rgb(236, 236, 222);
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   width: 100%;
 }
 h2 {
@@ -392,16 +392,65 @@ textarea {
     height: 50vh;
   }
   #landing {
-    margin-top: 40%;
+    margin-top: 30%;
     font-size: 25px;
     letter-spacing: 10px;
   }
-  .photo-top {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    opacity: 0.70;
-    display: block;
+  #about-me > h3 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #about-me > p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+  /* Tech stack section */
+  #skills > h2 {
+    margin-left: 25px;
+  }
+  #skills > p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+  #skills > h3 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #development {
+    margin-left: 75px;
+  }
+  #development > h3,
+  #tool > h3 {
+    font-size: 27px;
+  }
+  #development > ul > li,
+  #tool > ul > li {
+    font-size: 18px;
+  }
+  /* Projects Section */
+  #information > h2 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .projects > h2 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .projects > section > h3 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .projects > section > p {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #pe-photos {
     display: grid;
@@ -426,7 +475,7 @@ textarea {
     padding-left: 20px;
     padding-bottom: 20px;
   }
-  /* Time line */
+  /* Timeline */
   .timeline {
     display: grid;
     grid-template-columns: 49% 1% 50%;
@@ -440,6 +489,26 @@ textarea {
   .circle {
     margin-top: 25px;
     transform: translateX(1px);
+  }
+  /* Work Exp */
+  #job-info {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* Contact */
+  form,
+  .contact > h2 {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+  }
+  #logos > a {
+    transform: translateX(50px);
+    width: 5%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
