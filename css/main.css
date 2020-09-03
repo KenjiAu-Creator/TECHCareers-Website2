@@ -204,6 +204,7 @@ ul {
   "3      circle-3 date-3"
   "date-4 circle-4 4"
   "5      circle-5 date-5";
+  margin-top: 20px;
 }
 #education-1 {
   grid-area: 1;
@@ -367,9 +368,6 @@ textarea {
     height: auto;
     padding-left: 20px;
     padding-bottom: 20px;
-  }
-  #information #education {
-    margin-bottom: 10px;
   }
   /* Time line */
   .timeline {
