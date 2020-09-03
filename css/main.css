@@ -301,6 +301,15 @@ textarea {
   height: 100px;
   width: 250px;
 }
+input {
+  display: block;
+}
+textarea {
+  display: block;
+}
+#submit {
+  margin-top: 10px;
+}
 /* Social & Contact Section */
 #connect {
   padding-top: 15px;
