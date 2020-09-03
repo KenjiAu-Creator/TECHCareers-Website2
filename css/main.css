@@ -60,14 +60,14 @@ body {
   width: 60%;
   margin-right: auto;
   margin-left: auto;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   font-weight: 800;
   margin-top: 40%;
   background-color: #012326;
   color: #e7fbff;
   padding: 15px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
 }
 /* About Me Section */
 #about-me {
@@ -451,8 +451,20 @@ textarea {
     padding-left: 15px;
   }
 }
-
-/* Desktop View */
+/* Medium desktop view */
+@media screen and (min-width: 1366px) {
+  #landing-photo {
+    background-position-y: center;
+    height: 75vh;
+  }
+  #landing {
+    margin-top: 18%;
+    width: 50%;
+    font-size: 55px;
+    letter-spacing: 11px;
+  }
+}
+/* Big desktop View */
 @media screen and (min-width: 1400px) {
   #landing-photo {
     background-position-y: center;
