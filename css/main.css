@@ -212,6 +212,16 @@ ul {
   padding-bottom: 20px;
   text-decoration: none;
 }
+.project-title {
+  font-size: 23px;
+}
+.divider {
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: #69B7BF;
+  margin: 15px 20px;
+}
 #pe-photos {
   display: grid;
   grid-template-columns: 150px 100px;
