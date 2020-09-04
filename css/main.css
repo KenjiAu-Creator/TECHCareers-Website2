@@ -679,6 +679,7 @@ textarea {
     margin-right: auto;
     margin-left: auto;
     padding: 15px 0;
+    font-size: 14px;
   }
   #OFB-photos {
     margin-left: 100px;
@@ -726,9 +727,11 @@ textarea {
   .education-point > p {
     border-radius: 10px;
     margin-bottom: 40px;
+    font-size: 18px;
   }
   .date > span {
     margin-bottom: 10px;
+    font-size: 18px;
   }
   .icon {
     transform: translateX(4px) translateY(3px);
@@ -737,10 +740,14 @@ textarea {
     transform: translateX(3px) translateY(5px);
   }
   .left > span {
-    padding-left: 70px;
+    padding-left: 40px;
   }
   .right > span {
     padding-left: 15px;
+  }
+  /* Work Exp */
+  .work-exp {
+    font-size: 16px;
   }
   /* Contact */
   .contact > h2 {
@@ -748,6 +755,7 @@ textarea {
   }
   form {
     width: 85%;
+    font-size: 20px;
   }
 }
 
@@ -781,6 +789,11 @@ textarea {
   }
   .education-point > p {
     margin-top: 15px;
+    font-size: 20px;
+  }
+  .left > span,
+  .right > span {
+    font-size: 20px;
   }
 }
 
