@@ -731,13 +731,17 @@ textarea {
 @media screen and (min-width: 1366px) {
   #landing-photo {
     background-position-y: center;
-    height: 75vh;
+    height: 100vh;
   }
   #landing {
     margin-top: 18%;
     width: 50%;
     font-size: 55px;
     letter-spacing: 11px;
+  }
+  #learn {
+    width: 6%;
+    margin-top: 250px;
   }
   /* Tech Stack Section */
   #tool {
