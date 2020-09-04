@@ -223,13 +223,9 @@ ul {
 }
 #pe2 {
   grid-area: p2;
+  width: 125px;
   align-self: end;
-}
-.project-photo {
-  width: 330px;
   height: auto;
-  padding-left: 30px;
-  padding-bottom: 20px;
 }
 .project-photo {
   width: 200px;
@@ -237,10 +233,21 @@ ul {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-#pe-photos #pe2 {
+#chess-photos {
+  display: grid;
+  grid-template-columns: 150px 100px;
+  grid-template-areas: 
+  "c1 c2";
+}
+#chess1 {
+  grid-area: c1;
+}
+#chess2 {
+  grid-area: c2;
   width: 125px;
+  align-self: end;
   height: auto;
-} 
+}
 /* Education & Timeline */
 /* Using Grid design, Thank you Krizstina for the idea */
 .timeline {
