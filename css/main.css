@@ -312,35 +312,35 @@ a {
 }
 #education-2 {
   grid-area: 2;
-  border-left: solid yellow 9px;
+  border-left: solid rgb(255, 251, 16) 5px;
 }
 #education-3 {
   grid-area: 3;
 }
 #education-4 {
   grid-area: 4;
-  border-left: solid yellow 9px;
+  border-left: solid rgb(255, 251, 16) 5px;
 }
 #education-5 {
   grid-area: 5;
 }
 #date-1 {
   grid-area: date-1;
-  border-left: solid yellow 9px;
+  border-left: solid rgb(255, 251, 16) 5px;
 }
 #date-2 {
   grid-area: date-2;
 }
 #date-3 {
   grid-area: date-3;
-  border-left: solid yellow 9px;
+  border-left: solid rgb(255, 251, 16) 5px;
 }
 #date-4 {
   grid-area: date-4;
 }
 #date-5 {
   grid-area: date-5;
-  border-left: solid yellow 9px;
+  border-left: solid rgb(255, 251, 16) 5px;
 }
 .date {
   padding-top: 30px;
@@ -355,6 +355,7 @@ a {
   background-color: rgb(190, 7, 7);
   margin-top: 45px;
   z-index: 2;
+  transform: translateX(-1px);
 }
 .left {
   padding-left: 30px;
@@ -381,7 +382,7 @@ a {
   padding-right: 10px;
 }
 .education-point > p {
-  background-color: rgb(124, 118, 118);
+  background-color: rgba(197, 178, 178, 0.45);
   border-radius: 5%;
   padding-top: 5px;
 }
@@ -469,8 +470,6 @@ textarea {
   /* Tech stack section */
   #skills > h2 {
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
   }
   #skills > p {
     margin-right: auto;
@@ -541,16 +540,10 @@ textarea {
   .timeline {
     display: grid;
     grid-template-columns: 49% 1% 50%;
-    grid-template-areas: 
-    "1      circle-1 date-1"
-    "date-2 circle-2 2"
-    "3      circle-3 date-3"
-    "date-4 circle-4 4"
-    "5      circle-5 date-5";
   }
   .circle {
     margin-top: 25px;
-    transform: translateX(-2px);
+    transform: translateX(-3px);
   }
   .icon {
     transform: translateX(1px) translateY(3px);
@@ -643,7 +636,7 @@ textarea {
   }
   .circle {
     margin-top: 25px;
-    transform: translateX(6px) translateY(2px);
+    transform: translateX(4px) translateY(2px);
   }
   .education-point > p {
     border-radius: 10px;
@@ -688,7 +681,7 @@ textarea {
   }
   /* Timeline */
   .circle {
-    transform: translateX(11px) translateY(1px);
+    transform: translateX(9px) translateY(1px);
   }
   .education-point > p {
     margin-top: 15px;
@@ -702,6 +695,6 @@ textarea {
     margin-left: 200px;
   }
   .circle {
-    transform: translateX(19px) translateY(2px);
+    transform: translateX(17px) translateY(2px);
   }
 }
