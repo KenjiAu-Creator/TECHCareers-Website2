@@ -648,6 +648,12 @@ textarea {
     margin-left: 75px;
   }
   /* Projects Section */
+  .project-title {
+    font-size: 30px;
+  }
+  #information > section > p {
+    font-size: 20px;
+  }
   #pe-photos {
     margin-left: 100px;
     grid-template-columns: 400px 100px;
