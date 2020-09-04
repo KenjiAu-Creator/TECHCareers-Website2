@@ -636,10 +636,18 @@ textarea {
     font-size: 16px;
     margin-top: 200px;
   }
+  #about-me > h3 {
+    font-size: 30px;
+
+  }
   #about-me > p {
     width: 85%;
+    font-size: 16px;
   }
   /* Tech Stack Section */
+  #skills > h2 {
+    font-size: 30px;
+  }
   #skills > p {
     font-size: 18px;
     width: 85%;
@@ -758,6 +766,10 @@ textarea {
   #learn {
     width: 6%;
     margin-top: 250px;
+  }
+  /* About me section */
+  #about-me > p {
+    font-size: 18px;
   }
   /* Tech Stack Section */
   #tool {
