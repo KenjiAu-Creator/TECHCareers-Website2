@@ -795,10 +795,20 @@ textarea {
   .right > span {
     font-size: 20px;
   }
+  /* Work exp */
+  .work-exp {
+    font-size: 20px;
+  }
+  /* Contact */
 }
 
 /* Big desktop View */
 @media screen and (min-width: 1920px) {
+  #learn {
+    margin-top: 100px;
+    font-size: 28px;
+    width: 8%;
+  }
   /* Tech Stack Section */
   #tool {
     margin-left: 200px;
