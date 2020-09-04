@@ -215,9 +215,18 @@ ul {
 .project-title {
   font-size: 23px;
 }
+.project-buttons {
+  margin-left: 20px;
+}
+.button {
+  border: solid #69B7BF 1px;
+  padding: 5px;
+  background-color: rgba(30, 38, 39, 0.75);
+  color: rgb(197, 248, 252);
+}
 .divider {
   display: block;
-  width: 30%;
+  width: 45%;
   height: 2px;
   background-color: #69B7BF;
   margin: 15px 20px;
