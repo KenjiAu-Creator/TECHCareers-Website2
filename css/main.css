@@ -63,6 +63,11 @@ table {
   word-wrap: normal !important;
 }
 /* Styling begins */
+/* https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html */
+/* HTML CSS for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Overpass', sans-serif;
 }
@@ -112,6 +117,9 @@ body {
   color: #e7fbff;
   padding: 15px;
   letter-spacing: 5px;
+}
+#learn {
+  visibility: hidden;
 }
 /* About Me Section */
 #about-me {
@@ -577,13 +585,24 @@ textarea {
 @media screen and (min-width: 1024px) {
   #landing-photo {
     background-position-y: center;
-    height: 75vh;
+    height: 100vh;
   }
   #landing {
-    margin-top: 40%;
+    margin-top: 35%;
     width: 60%;
     font-size: 55px;
     letter-spacing: 11px;
+    text-align: center;
+  }
+  #learn {
+    visibility: visible;
+    padding: 10px 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 8%;
+    font-size: 16px;
+    margin-top: 150px;
   }
   #about-me > p {
     width: 85%;
