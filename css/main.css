@@ -216,10 +216,13 @@ ul {
   font-size: 23px;
 }
 .project-buttons {
-  margin-left: 20px;
+  margin: 15px 20px;
+}
+a {
+  text-decoration: none;
 }
 .button {
-  border: solid #69B7BF 1px;
+  border: solid #69B7BF 3px;
   padding: 5px;
   background-color: rgba(30, 38, 39, 0.75);
   color: rgb(197, 248, 252);
@@ -419,6 +422,7 @@ textarea {
 }
 /* Social & Contact Section */
 #connect {
+  text-decoration: none;
   padding-top: 15px;
   display: block;
 }
