@@ -233,6 +233,28 @@ ul {
   padding-left: 20px;
   padding-bottom: 20px;
 }
+#OFB-photos {
+  display: grid;
+  grid-template-columns: 150px 65px 75px;
+  grid-template-areas: 
+  "OFB1 OFB2 OFB3";
+}
+#OFB-1 {
+  grid-area: OFB1;
+  align-self: end;
+}
+#OFB-2 {
+  grid-area: OFB2;
+  width: 80px;
+  align-self: end;
+  height: auto;
+}
+#OFB-3 {
+  grid-area: OFB3;
+  align-self: end;
+  width: 100px;
+  height: auto;
+}
 #chess-photos {
   display: grid;
   grid-template-columns: 150px 100px;
