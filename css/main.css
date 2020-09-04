@@ -292,10 +292,10 @@ a {
   grid-template-areas: 
   "c1 c2";
 }
-#chess1 {
+#chess-1 {
   grid-area: c1;
 }
-#chess2 {
+#chess-2 {
   grid-area: c2;
   width: 125px;
   align-self: end;
@@ -482,6 +482,8 @@ textarea {
   /* Tech stack section */
   #skills > h2 {
     width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #skills > p {
     margin-right: auto;
@@ -510,6 +512,12 @@ textarea {
     margin-right: auto;
     margin-left: auto;
   }
+  .project-buttons {
+    margin-left: 60px;
+  }
+  .divider {
+    margin-left: 50px;
+  }
   .projects > h2 {
     width: 90%;
     margin-right: auto;
@@ -536,17 +544,29 @@ textarea {
   }
   #pe2 {
     grid-area: p2;
-    align-self: end;
-  }
-  #pe-photos #pe2 {
     width: 250px;
-    height: auto;
-  } 
+  }
   .project-photo {
     width: 330px;
-    height: auto;
     padding-left: 20px;
     padding-bottom: 20px;
+  }
+  #OFB-photos {
+    grid-template-columns: 
+    275px 75px 100px;
+  }
+  #OFB-2 {
+    width: 125px;
+  }
+  #OFB-3 {
+    width: 200px;
+  }
+  #chess-photos {
+    grid-template-columns: 
+    275px 100px;
+  }
+  #chess-2 {
+    width: 225px;
   }
   /* Timeline */
   .timeline {
@@ -580,6 +600,11 @@ textarea {
     margin-left: auto;
     text-decoration: none;
   }
+  #logos {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   #logos > a {
     transform: translateX(50px);
     width: 5%;
@@ -609,7 +634,7 @@ textarea {
     margin-left: auto;
     width: 8%;
     font-size: 16px;
-    margin-top: 150px;
+    margin-top: 200px;
   }
   #about-me > p {
     width: 85%;
@@ -624,27 +649,44 @@ textarea {
   }
   /* Projects Section */
   #pe-photos {
-    display: grid;
+    margin-left: 100px;
     grid-template-columns: 275px 100px;
-    grid-template-areas: 
-    "p1 p2";
   }
   #pe1 {
     grid-area: p1;
   }
   #pe2 {
     grid-area: p2;
-    align-self: end;
-  }
-  #pe-photos #pe2 {
     width: 330px;
-    height: auto;
   }
   .projects > section > p {
     width: 85%;
     margin-right: auto;
     margin-left: auto;
     padding: 15px 0;
+  }
+  #OFB-photos {
+    margin-left: 100px;
+    grid-template-columns: 
+    275px 75px 100px;
+  }
+  #OFB-2 {
+    width: 125px;
+    height: auto;
+  }
+  #OFB-3 {
+    width: 200px;
+  }
+  #chess-photos {
+    margin-left: 100px;
+    grid-template-columns: 
+    275px 100px;
+  }
+  #chess-2 {
+    width: 225px;
+  }
+  #to-do-photos {
+    margin-left: 100px;
   }
   /* Timeline */
   .timeline {
