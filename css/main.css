@@ -650,14 +650,15 @@ textarea {
   /* Projects Section */
   #pe-photos {
     margin-left: 100px;
-    grid-template-columns: 275px 100px;
+    grid-template-columns: 400px 100px;
   }
   #pe1 {
     grid-area: p1;
+    width: 500px;
   }
   #pe2 {
     grid-area: p2;
-    width: 330px;
+    width: 400px;
   }
   .projects > section > p {
     width: 85%;
@@ -668,25 +669,34 @@ textarea {
   #OFB-photos {
     margin-left: 100px;
     grid-template-columns: 
-    275px 75px 100px;
+    375px 150px 100px;
+  }
+  #OFB-1 {
+    width: 450px;
   }
   #OFB-2 {
-    width: 125px;
+    width: 175px;
     height: auto;
   }
   #OFB-3 {
-    width: 200px;
+    width: 300px;
   }
   #chess-photos {
     margin-left: 100px;
     grid-template-columns: 
-    275px 100px;
+    400px 100px;
+  }
+  #chess-1 {
+    width: 500px;
   }
   #chess-2 {
-    width: 225px;
+    width: 375px;
   }
   #to-do-photos {
     margin-left: 100px;
+  }
+  #to-do-1 {
+    width: 500px;
   }
   /* Timeline */
   .timeline {
