@@ -320,35 +320,35 @@ a {
 }
 #education-2 {
   grid-area: 2;
-  border-left: solid rgb(255, 251, 16) 5px;
+  border-left: solid #69B7BF 5px;
 }
 #education-3 {
   grid-area: 3;
 }
 #education-4 {
   grid-area: 4;
-  border-left: solid rgb(255, 251, 16) 5px;
+  border-left: solid #69B7BF 5px;
 }
 #education-5 {
   grid-area: 5;
 }
 #date-1 {
   grid-area: date-1;
-  border-left: solid rgb(255, 251, 16) 5px;
+  border-left: solid #69B7BF 5px;
 }
 #date-2 {
   grid-area: date-2;
 }
 #date-3 {
   grid-area: date-3;
-  border-left: solid rgb(255, 251, 16) 5px;
+  border-left: solid #69B7BF 5px;
 }
 #date-4 {
   grid-area: date-4;
 }
 #date-5 {
   grid-area: date-5;
-  border-left: solid rgb(255, 251, 16) 5px;
+  border-left: solid #69B7BF 5px;
 }
 .date {
   padding-top: 30px;
@@ -360,7 +360,7 @@ a {
   width: 25px;
   height: 25px;
   grid-area:circle;
-  background-color: rgb(190, 7, 7);
+  background-color: rgba(24, 22, 22, 0.95);
   margin-top: 45px;
   z-index: 2;
   transform: translateX(-1px);
@@ -395,7 +395,11 @@ a {
   padding-top: 5px;
 }
 .icon {
-  transform: translateX(1px) translateY(3px);
+  transform: translateX(4px) translateY(3px);
+  color: rgb(230, 228, 228);
+}
+.laptop {
+  transform: translateX(3.5px) translateY(5px);
 }
 /* Work Exp */
 #job-info {
@@ -551,10 +555,13 @@ textarea {
   }
   .circle {
     margin-top: 25px;
-    transform: translateX(-3px);
+    transform: translateX(-4px);
   }
   .icon {
-    transform: translateX(1px) translateY(3px);
+    transform: translateX(4px) translateY(3px);
+  }
+  .laptop {
+    transform: translateX(3.5px) translateY(5px);
   }
   .education-point > p {
     border-radius: 5px;
@@ -644,14 +651,7 @@ textarea {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
-    display: grid;
     grid-template-columns: 44% 2% 48%;
-    grid-template-areas: 
-    "1      circle-1 date-1"
-    "date-2 circle-2 2"
-    "3      circle-3 date-3"
-    "date-4 circle-4 4"
-    "5      circle-5 date-5";
   }
   .circle {
     margin-top: 25px;
@@ -665,7 +665,10 @@ textarea {
     margin-bottom: 10px;
   }
   .icon {
-    transform: translateX(2px) translateY(3px);
+    transform: translateX(4px) translateY(3px);
+  }
+  .laptop {
+    transform: translateX(3px) translateY(5px);
   }
   .left > span {
     padding-left: 70px;
