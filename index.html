@@ -15,7 +15,7 @@
   <h1 class="less-info">Kenji's Portfolio</h1>
   <section id="landing-photo">
     <h2 class="less-info">Landing Photo</h2>
-    <h2 id="landing">Hello, I'm Kenji.</h3>
+    <h2 id="landing">Hello, I'm Kenji.</h2>
   </section>
   <section id="about-me">
     <h3>About Me</h3>
@@ -66,10 +66,10 @@
     <section class="projects less-info">
       <h2 id="project-head">Some of my work!</h2>
       <section id="project1">
-        <section id="pe-photos">
+        <div id="pe-photos">
           <img id="pe1" class="project-photo" src="imgs/PE-5.PNG" alt="Private Event page">
           <img id="pe2" class="project-photo" src="imgs/PE-4.PNG" alt="Private Event User page">
-        </section>
+        </div>
         <h3>Private Events</h3>
         <p>
           A web app for planning and creating events. Each event shows the host, location, attendees and date of the
@@ -78,11 +78,11 @@
         </p>
       </section>
       <section id="project2">
-        <section id="OFB-photos">
+        <div id="OFB-photos">
           <img id="OFB-1" class="project-photo" src="imgs/OFB-3.PNG" alt="Flight Booker booking page">
           <img id="OFB-2" class="project-photo" src="imgs/OFB-7.PNG" alt="Flight Booker booking page">
           <img id="OFB-3" class="project-photo" src="imgs/OFB-5.PNG" alt="Flight Booker booking page">
-        </section>
+        </div>
         <h3>Flight Booker</h3>
         <p>
           A web application designed to book travel flights. The user can look up flights based on the date and airports
@@ -90,19 +90,19 @@
         </p>
       </section>
       <Section id="project3">
-        <section id="chess-photos">
-          <img id="chess1" class="project-photo" src="imgs/Chess1.PNG">
-          <img id="chess2" class="project-photo" src="imgs/Chess3.PNG">
-        </section>
+        <div id="chess-photos">
+          <img id="chess1" class="project-photo" src="imgs/Chess1.PNG" alt="Chess game opener">
+          <img id="chess2" class="project-photo" src="imgs/Chess3.PNG" alt="Chess game with team white winner">
+        </div>
         <h3>Command Line Chess</h3>
         <p>
           A Ruby command line application that allows the two users to play a game of chess against each other.
         </p>
       </Section>
       <section id="project4">
-        <section id="to-do-photos">
+        <div id="to-do-photos">
           <img class="project-photo" src="imgs/To-Do-1.PNG" alt="To Do list landing photo">
-        </section>
+        </div>
         <h3>To Do List</h3>
         <p>
           A web application for keeping track of tasks that you wish to complete. The app will also timestamp when you
@@ -114,66 +114,67 @@
     <section class="education less-info">
       <h2 class="less-info">Education</h2>
       <section class="timeline">
-        <section class="education-point left" id="education-1">
+        <h2 class="less-info">Timeline</h2>
+        <div class="education-point left" id="education-1">
           <p>
             University of Alberta & TECHCareers<br>
             Software Developer Program
           </p>
-        </section>
+        </div>
         <div id="circle-1" class="circle">
           <i class="icon fas fa-laptop-code"></i>
         </div>
-        <section class="date right" id="date-1">
+        <div class="date right" id="date-1">
           <span>August 2020 - January 2021 (Expected)</span>
-        </section>
-        <section class="education-point right" id="education-2">
+        </div>
+        <div class="education-point right" id="education-2">
           <p>
             The Odin Project<br>
             Full Stack Ruby on Rails Web Developer Track
           </p>
-        </section>
+        </div>
         <div id="circle-2" class="circle">
           <i class="icon fas fa-laptop-code"></i>
         </div>
-        <section class="date left" id="date-2">
+        <div class="date left" id="date-2">
           <span>January - August 2020</span>
-        </section>
-        <section class="education-point left" id="education-3">
+        </div>
+        <div class="education-point left" id="education-3">
           <p>
             EdX / MITx<br>
             Introduction to Computer Science and Programming Using Python
           </p>
-        </section>
+        </div>
         <div id="circle-3" class="circle">
           <i class="icon fas fa-laptop-code"></i>
         </div>
-        <section class="date right" id="date-3">
+        <div class="date right" id="date-3">
           <span>September - December 2019</span>
-        </section>
-        <section class="education-point right" id="education-4">
+        </div>
+        <div class="education-point right" id="education-4">
           <p>
             University of Alberta<br>
             Bachelor of Applied Science - Mechanical Engineering
           </p>
-        </section>
+        </div>
         <div id="circle-4" class="circle">
           <i class="icon fas fa-university fa-lg"></i>
         </div>
-        <section class="date left" id="date-4">
+        <div class="date left" id="date-4">
           <span>September 2013 - June 2018</span>
-        </section>
-        <section class="education-point left" id="education-5">
+        </div>
+        <div class="education-point left" id="education-5">
           <p>
             Grant MacEwan Univerisity<br>
             Bachelor of Science in Engineering Transfer
           </p>
-        </section>
+        </div>
         <div id="circle-5" class="circle">
           <i class="icon fas fa-university fa-lg"></i>
         </div>
-        <section class="date right" id="date-5">
+        <div class="date right" id="date-5">
           <span>September 2012 - April 2013</span>
-        </section>
+        </div>
       </section>
     </section>
     <h2 id="work-exp">Work Experience</h2>
@@ -231,14 +232,16 @@
         </label>
         <input id="submit" type="submit">
       </form>
-      <h2 id="connect">Lets connect!</h2>
       <section id="logos">
-        <a href="https://github.com/KenjiAu-Creator" target="_blank">
-          <img class="social" id="github" src="imgs/GitHub_Logo.png" alt="GitHub Logo">
-        </a>
-        <a href="https://www.linkedin.com/in/kenjiau-0123/" target="_blank">
-          <img class="social" id="linkedin" src="imgs/LI-Logo.png" alt="LinkedIn Logo">
-        </a>
+        <h2 id="connect">Lets connect!</h2>
+        <div id="social-logos">
+          <a href="https://github.com/KenjiAu-Creator" target="_blank">
+            <img class="social" id="github" src="imgs/GitHub_Logo.png" alt="GitHub Logo">
+          </a>
+          <a href="https://www.linkedin.com/in/kenjiau-0123/" target="_blank">
+            <img class="social" id="linkedin" src="imgs/LI-Logo.png" alt="LinkedIn Logo">
+          </a>
+        </div>
       </section>
     </section>
   </section>

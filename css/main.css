@@ -401,11 +401,17 @@ textarea {
 /* Social & Contact Section */
 #connect {
   padding-top: 15px;
+  display: block;
 }
 #logos {
   padding-top: 10px;
+  display: block;
+  width: 100vw;
+}
+#social-logos {
   display: inline-flex;
   flex-direction: row;
+  padding-top: 10px;
 }
 #github {
   padding: 0 15px;
