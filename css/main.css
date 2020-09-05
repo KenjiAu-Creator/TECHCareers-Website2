@@ -141,6 +141,7 @@ body {
 }
 #divider1 {
   background-color: #094950;
+  margin: 10px 20px;
 }
 p {
   padding: 0 30px 15px 30px;
@@ -249,7 +250,7 @@ a {
   width: 45%;
   height: 2px;
   background-color: #69B7BF;
-  margin: 15px 20px;
+  margin: 30px 20px;
 }
 #privateEventPhotos {
   display: grid;
@@ -477,6 +478,7 @@ textarea {
     font-size: 25px;
     letter-spacing: 10px;
   }
+  /* About Section */
   #aboutMe > h3 {
     width: 90%;
     margin-right: auto;
@@ -484,6 +486,9 @@ textarea {
   }
   #objective > p {
     margin: 0 20px;
+  }
+  #divider1 {
+    margin-left: 50px;
   }
   #aboutMe > p {
     margin-right: auto;
