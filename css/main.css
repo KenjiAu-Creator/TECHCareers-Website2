@@ -134,6 +134,15 @@ body {
   padding: 15px 0 10px 20px;
   text-decoration: underline;
 }
+#objective > p {
+  font-weight: bold;
+  padding: 0 30px;
+  margin: 0 20px;
+  font-size: 18px;
+}
+#divider1 {
+  background-color: #094950;
+}
 p {
   padding: 0 30px 15px 30px;
   font-size: 14px;
@@ -183,11 +192,11 @@ form {
 ul {
   padding-left: 15px;
 }
-#job-info > li {
+#jobInfo > li {
   list-style-type: none;
   padding-bottom: 10px;
 }
-.job-title {
+.jobTitle {
   font-weight: bold;
 }
 #projectsTitle {
@@ -258,7 +267,7 @@ a {
   align-self: end;
   height: auto;
 }
-.project-photo {
+.projectPhoto {
   width: 200px;
   height: auto;
   padding-left: 20px;
@@ -402,10 +411,10 @@ a {
   transform: translateX(3.5px) translateY(5px);
 }
 /* Work Exp */
-#job-info {
+#jobInfo {
   margin-top: 10px;
 }
-#job-info > li > ul > li {
+#jobInfo > li > ul > li {
   list-style-type: disc;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -546,7 +555,7 @@ textarea {
     grid-area: p2;
     width: 250px;
   }
-  .project-photo {
+  .projectPhoto {
     width: 330px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -587,7 +596,7 @@ textarea {
     border-radius: 5px;
   }
   /* Work Exp */
-  #job-info {
+  #jobInfo {
     width: 85%;
     margin-right: auto;
     margin-left: auto;
