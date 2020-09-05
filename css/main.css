@@ -153,7 +153,6 @@ p {
   background-image: url("https://images.pexels.com/photos/163163/sackcloth-sackcloth-textured-laptop-ipad-163163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   width: 100vw;
-  height: 35vh;
   color: rgb(233, 229, 229);
 }
 #skills > p {
@@ -169,6 +168,7 @@ p {
 #tool {
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 20px;
 }
 /* Extra information Section */
 #information {
@@ -743,7 +743,9 @@ textarea {
   }
   .circle {
     margin-top: 25px;
-    transform: translateX(4px) translateY(2px);
+    width: 30px;
+    height: 30px;
+    transform: translateX(1px) translateY(0px);
   }
   .educationPoint > p {
     border-radius: 10px;
@@ -755,10 +757,10 @@ textarea {
     font-size: 18px;
   }
   .icon {
-    transform: translateX(4px) translateY(3px);
+    transform: translateX(7px) translateY(6px);
   }
   .laptop {
-    transform: translateX(3px) translateY(5px);
+    transform: translateX(6px) translateY(8px);
   }
   .left > span {
     padding-left: 40px;
@@ -816,7 +818,7 @@ textarea {
   }
   /* Timeline */
   .circle {
-    transform: translateX(9px) translateY(1px);
+    transform: translateX(6.5px) translateY(0px);
   }
   .educationPoint > p {
     margin-top: 15px;
@@ -845,6 +847,6 @@ textarea {
     margin-left: 200px;
   }
   .circle {
-    transform: translateX(17px) translateY(2px);
+    transform: translateX(14px) translateY(2px);
   }
 }
