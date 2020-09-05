@@ -1,11 +1,11 @@
 // Document Element Initializations
 const education = document.querySelector("#education");
-const projects = document.querySelector("#projects-title");
-const work = document.querySelector("#work-exp");
+const projects = document.querySelector("#projectsTitle");
+const work = document.querySelector("#workExp");
 const contact = document.querySelector("#contact");
 const educationSection = document.querySelector(".education");
 const projectsSection = document.querySelector(".projects");
-const workSection = document.querySelector(".work-exp");
+const workSection = document.querySelector(".workExp");
 const contactSection = document.querySelector(".contact");
 const supervisorInfo = document.querySelector("#supervisor");
 const bartenderInfo = document.querySelector("#bartender");
@@ -13,51 +13,51 @@ const researchInfo = document.querySelector("#research")
 
 // Showing / Hiding main information sections
 projects.addEventListener("click", () => {
-  projectsSection.classList.remove("less-info");
-  workSection.classList.add("less-info");
-  contactSection.classList.add("less-info");
-  educationSection.classList.add("less-info");
+  projectsSection.classList.remove("lessInfo");
+  workSection.classList.add("lessInfo");
+  contactSection.classList.add("lessInfo");
+  educationSection.classList.add("lessInfo");
   projects.scrollIntoView();
 });
 
 education.addEventListener("click", () => {
-  projectsSection.classList.add("less-info");
-  workSection.classList.add("less-info");
-  contactSection.classList.add("less-info");
-  educationSection.classList.remove("less-info");
+  projectsSection.classList.add("lessInfo");
+  workSection.classList.add("lessInfo");
+  contactSection.classList.add("lessInfo");
+  educationSection.classList.remove("lessInfo");
   education.scrollIntoView();
 });
 
 work.addEventListener("click", () => {
-  projectsSection.classList.add("less-info");
-  workSection.classList.remove("less-info");
-  contactSection.classList.add("less-info");
-  educationSection.classList.add("less-info");
+  projectsSection.classList.add("lessInfo");
+  workSection.classList.remove("lessInfo");
+  contactSection.classList.add("lessInfo");
+  educationSection.classList.add("lessInfo");
   work.scrollIntoView();
 });
 
 contact.addEventListener("click", () => {
-  projectsSection.classList.add("less-info");
-  workSection.classList.add("less-info");
-  contactSection.classList.remove("less-info");
-  educationSection.classList.add("less-info");
+  projectsSection.classList.add("lessInfo");
+  workSection.classList.add("lessInfo");
+  contactSection.classList.remove("lessInfo");
+  educationSection.classList.add("lessInfo");
   contact.scrollIntoView();
 });
 
 /* Extra info in Work Exp */
 supervisorInfo.addEventListener("click", () => {
   const supervisorExpand = document.querySelector("#supervisor-more");
-  supervisorExpand.classList.remove("less-info");
+  supervisorExpand.classList.remove("lessInfo");
 });
 
 bartenderInfo.addEventListener("click", () => {
   const bartenderExpand = document.querySelector("#bartender-more");
-  bartenderExpand.classList.remove("less-info");
+  bartenderExpand.classList.remove("lessInfo");
 });
 
 researchInfo.addEventListener("click", () => {
   const researchExpand = document.querySelector("#research-more");
-  researchExpand.classList.remove("less-info");
+  researchExpand.classList.remove("lessInfo");
 });
 
 /* Profanity filter */

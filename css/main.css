@@ -50,7 +50,7 @@ table {
 /* Code taken from:
  * https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
  */
-.less-info {
+.lessInfo {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -91,7 +91,7 @@ body {
   ;
 }
 /* Landing */
-#landing-photo {
+#landingPhoto {
   background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg");
   background-size: cover;
   background-position-x: center;
@@ -122,13 +122,13 @@ body {
   visibility: hidden;
 }
 /* About Me Section */
-#about-me {
+#aboutMe {
   background-color: #69B7BF;
   color: #261101;
   width: 100%;
   grid-area: about;
 }
-#about-me > h3 {
+#aboutMe > h3 {
   width: 300px;
   font-size: 25px;
   padding: 15px 0 10px 20px;
@@ -190,7 +190,7 @@ ul {
 .job-title {
   font-weight: bold;
 }
-#projects-title {
+#projectsTitle {
   grid-area: projects;
 }
 .projects {
@@ -202,10 +202,10 @@ ul {
 .education {
   grid-area: education-more;
 }
-#work-exp {
+#workExp {
   grid-area: work;
 }
-.work-exp {
+.workExp {
   grid-area: work-more;
 }
 #contact {
@@ -215,16 +215,16 @@ ul {
   grid-area: contact-more;
 }
 /* Projects Expanded Section */
-#project-head {
+#projectsHead {
   font-size: 20px;
   padding-bottom: 20px;
   text-decoration: none;
 }
-.project-title {
+.projectTitle {
   font-size: 23px;
   margin-bottom: 5px;
 }
-.project-buttons {
+.projectButtons {
   margin: 15px 20px;
 }
 a {
@@ -243,16 +243,16 @@ a {
   background-color: #69B7BF;
   margin: 15px 20px;
 }
-#pe-photos {
+#privateEventPhotos {
   display: grid;
   grid-template-columns: 150px 100px;
   grid-template-areas: 
   "p1 p2";
 }
-#pe1 {
+#privateEvent1 {
   grid-area: p1;
 }
-#pe2 {
+#privateEvent2 {
   grid-area: p2;
   width: 125px;
   align-self: end;
@@ -264,38 +264,38 @@ a {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-#OFB-photos {
+#OFBPhotos {
   display: grid;
   grid-template-columns: 150px 65px 75px;
   grid-template-areas: 
   "OFB1 OFB2 OFB3";
 }
-#OFB-1 {
+#OFB1 {
   grid-area: OFB1;
   align-self: end;
 }
-#OFB-2 {
+#OFB2 {
   grid-area: OFB2;
   width: 80px;
   align-self: end;
   height: auto;
 }
-#OFB-3 {
+#OFB3 {
   grid-area: OFB3;
   align-self: end;
   width: 100px;
   height: auto;
 }
-#chess-photos {
+#chessPhotos {
   display: grid;
   grid-template-columns: 150px 100px;
   grid-template-areas: 
   "c1 c2";
 }
-#chess-1 {
+#chess1 {
   grid-area: c1;
 }
-#chess-2 {
+#chess2 {
   grid-area: c2;
   width: 125px;
   align-self: end;
@@ -386,10 +386,10 @@ a {
 #circle-5 {
   grid-area: circle-5;
 }
-.education-point {
+.educationPoint {
   padding-right: 10px;
 }
-.education-point > p {
+.educationPoint > p {
   background-color: rgba(197, 178, 178, 0.45);
   border-radius: 5%;
   padding-top: 5px;
@@ -411,7 +411,7 @@ a {
   margin-bottom: 5px;
 }
 /* Contact form */
-#get-in-touch {
+#getInTouch {
   padding-top: 10px;
   text-decoration: none;
   text-emphasis: none;
@@ -461,7 +461,7 @@ textarea {
 
 /* Tablet view */
 @media screen and (min-width: 600px) {
-  #landing-photo {
+  #landingPhoto {
     height: 50vh;
   }
   #landing {
@@ -469,12 +469,12 @@ textarea {
     font-size: 25px;
     letter-spacing: 10px;
   }
-  #about-me > h3 {
+  #aboutMe > h3 {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
   }
-  #about-me > p {
+  #aboutMe > p {
     margin-right: auto;
     margin-left: auto;
     width: 80%;
@@ -512,7 +512,7 @@ textarea {
     margin-right: auto;
     margin-left: auto;
   }
-  .project-buttons {
+  .projectButtons {
     margin-left: 60px;
   }
   .divider {
@@ -533,16 +533,16 @@ textarea {
     margin-right: auto;
     margin-left: auto;
   }
-  #pe-photos {
+  #privateEventPhotos {
     display: grid;
     grid-template-columns: 275px 100px;
     grid-template-areas: 
     "p1 p2";
   }
-  #pe1 {
+  #privateEvent1 {
     grid-area: p1;
   }
-  #pe2 {
+  #privateEvent2 {
     grid-area: p2;
     width: 250px;
   }
@@ -551,21 +551,21 @@ textarea {
     padding-left: 20px;
     padding-bottom: 20px;
   }
-  #OFB-photos {
+  #OFBPhotos {
     grid-template-columns: 
     275px 75px 100px;
   }
-  #OFB-2 {
+  #OFB2 {
     width: 125px;
   }
-  #OFB-3 {
+  #OFB3 {
     width: 200px;
   }
-  #chess-photos {
+  #chessPhotos {
     grid-template-columns: 
     275px 100px;
   }
-  #chess-2 {
+  #chess2 {
     width: 225px;
   }
   /* Timeline */
@@ -583,7 +583,7 @@ textarea {
   .laptop {
     transform: translateX(3.5px) translateY(5px);
   }
-  .education-point > p {
+  .educationPoint > p {
     border-radius: 5px;
   }
   /* Work Exp */
@@ -615,7 +615,7 @@ textarea {
 
 /* Small Laptop view */
 @media screen and (min-width: 1024px) {
-  #landing-photo {
+  #landingPhoto {
     background-position-y: center;
     height: 100vh;
   }
@@ -636,11 +636,11 @@ textarea {
     font-size: 16px;
     margin-top: 200px;
   }
-  #about-me > h3 {
+  #aboutMe > h3 {
     font-size: 30px;
 
   }
-  #about-me > p {
+  #aboutMe > p {
     width: 85%;
     font-size: 16px;
   }
@@ -656,21 +656,21 @@ textarea {
     margin-left: 75px;
   }
   /* Projects Section */
-  .project-title {
+  .projectTitle {
     font-size: 30px;
   }
   #information > section > p {
     font-size: 20px;
   }
-  #pe-photos {
+  #privateEventPhotos {
     margin-left: 100px;
     grid-template-columns: 400px 100px;
   }
-  #pe1 {
+  #privateEvent1 {
     grid-area: p1;
     width: 500px;
   }
-  #pe2 {
+  #privateEvent2 {
     grid-area: p2;
     width: 400px;
   }
@@ -681,36 +681,36 @@ textarea {
     padding: 15px 0;
     font-size: 14px;
   }
-  #OFB-photos {
+  #OFBPhotos {
     margin-left: 100px;
     grid-template-columns: 
     375px 150px 100px;
   }
-  #OFB-1 {
+  #OFB1 {
     width: 450px;
   }
-  #OFB-2 {
+  #OFB2 {
     width: 175px;
     height: auto;
   }
-  #OFB-3 {
+  #OFB3 {
     width: 300px;
   }
-  #chess-photos {
+  #chessPhotos {
     margin-left: 100px;
     grid-template-columns: 
     400px 100px;
   }
-  #chess-1 {
+  #chess1 {
     width: 500px;
   }
-  #chess-2 {
+  #chess2 {
     width: 375px;
   }
-  #to-do-photos {
+  #toDoPhotos {
     margin-left: 100px;
   }
-  #to-do-1 {
+  #toDo1 {
     width: 500px;
   }
   /* Timeline */
@@ -724,7 +724,7 @@ textarea {
     margin-top: 25px;
     transform: translateX(4px) translateY(2px);
   }
-  .education-point > p {
+  .educationPoint > p {
     border-radius: 10px;
     margin-bottom: 40px;
     font-size: 18px;
@@ -746,7 +746,7 @@ textarea {
     padding-left: 15px;
   }
   /* Work Exp */
-  .work-exp {
+  .workExp {
     font-size: 16px;
   }
   /* Contact */
@@ -761,7 +761,7 @@ textarea {
 
 /* Medium desktop view */
 @media screen and (min-width: 1366px) {
-  #landing-photo {
+  #landingPhoto {
     background-position-y: center;
     height: 100vh;
   }
@@ -776,7 +776,7 @@ textarea {
     margin-top: 250px;
   }
   /* About me section */
-  #about-me > p {
+  #aboutMe > p {
     font-size: 18px;
   }
   /* Tech Stack Section */
@@ -790,7 +790,7 @@ textarea {
   .circle {
     transform: translateX(9px) translateY(1px);
   }
-  .education-point > p {
+  .educationPoint > p {
     margin-top: 15px;
     font-size: 20px;
   }
@@ -799,7 +799,7 @@ textarea {
     font-size: 20px;
   }
   /* Work exp */
-  .work-exp {
+  .workExp {
     font-size: 20px;
   }
   /* Contact */
