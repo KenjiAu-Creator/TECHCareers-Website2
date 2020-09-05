@@ -783,6 +783,9 @@ textarea {
   #tool {
     margin-left: 100px;
   }
+  .projects > section > p {
+    font-size: 18px;
+  }
   /* Timeline */
   .circle {
     transform: translateX(9px) translateY(1px);
