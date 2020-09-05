@@ -137,7 +137,6 @@ body {
 #objective > p {
   font-weight: bold;
   padding: 0 30px;
-  margin: 0 20px;
   font-size: 18px;
 }
 #divider1 {
@@ -483,6 +482,9 @@ textarea {
     margin-right: auto;
     margin-left: auto;
   }
+  #objective > p {
+    margin: 0 20px;
+  }
   #aboutMe > p {
     margin-right: auto;
     margin-left: auto;
@@ -579,7 +581,6 @@ textarea {
   }
   /* Timeline */
   .timeline {
-    display: grid;
     grid-template-columns: 49% 1% 50%;
   }
   .circle {
@@ -647,7 +648,13 @@ textarea {
   }
   #aboutMe > h3 {
     font-size: 30px;
-
+  }
+  #divider1 {
+    margin-left: 60px;
+  }
+  #objective > p {
+    margin: 0 40px;
+    font-size: 25px;
   }
   #aboutMe > p {
     width: 85%;
@@ -785,6 +792,13 @@ textarea {
     margin-top: 250px;
   }
   /* About me section */
+  #objective > p {
+    margin: 0 60px;
+    font-size: 30px;
+  }
+  #divider1 {
+    margin-left: 85px;
+  }
   #aboutMe > p {
     font-size: 18px;
   }
