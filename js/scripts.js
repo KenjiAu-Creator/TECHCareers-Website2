@@ -88,14 +88,30 @@ form.addEventListener("submit", () => {
   const subject = document.querySelector("#subject").value;
   const name = document.querySelector("#name").value;
   const errorList = document.querySelector("#errorList");
+  const newErrorList = document.createElement("UL");
+  newErrorList.setAttribute("ID", "errorList");
 
+  if (name == "") {
+    const errorMessage = document.createElement("P");
+    errorMessage.textContent = "Please fill in your name.";
+    newErrorList.append(errorMessage);
+  }
+  if (subject == "") {
+    const errorMessage = document.createElement("P");
+    errorMessage.textContent = "Please fill in a subject.";
+    newErrorList.append(errorMessage);
+  }
+  if (message.value == "") {
+    const errorMessage = document.createElement("P");
+    errorMessage.textContent = "Please fill in a message.";
+    newErrorList.append(errorMessage);
+  }
+  
   if (filter(message).length > 0) {
     event.preventDefault();
     const errorMessage = document.createElement("P");
-    errorMessage.textContent = "Please ensure no profanity is included in your message. The filter picked up the following words:"
-    const newErrorList = document.createElement("UL");
-    newErrorList.setAttribute("ID", "errorList");
-    newErrorList.prepend(errorMessage);
+    errorMessage.textContent = "Please ensure no profanity is included in your message. The filter picked up the following words:";
+    newErrorList.append(errorMessage);
     const badWordArray = filter(message);
     for (const word of badWordArray) {
       const LI = document.createElement("LI");

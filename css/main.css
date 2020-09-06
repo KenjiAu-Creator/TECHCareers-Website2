@@ -450,6 +450,9 @@ form {
   padding: 0;
   margin: 5px 0;
 }
+#errorList > li {
+  margin-left: 30px;
+}
 #errorList {
   list-style-type: disc;
 }
