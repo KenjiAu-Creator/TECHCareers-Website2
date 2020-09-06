@@ -106,7 +106,7 @@ body {
 }
 #landing {
   text-align: center;
-  width: 60%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
   font-size: 20px;
@@ -636,7 +636,7 @@ textarea {
   }
   #landing {
     margin-top: 35%;
-    width: 60%;
+    width: 70%;
     font-size: 55px;
     letter-spacing: 11px;
     text-align: center;
