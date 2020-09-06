@@ -66,14 +66,16 @@ function filter(message) {
    * If it contains a swear word then return true
    * else return false
    */
+  const filterArray = [];
   message = message.toLowerCase();
-  const p = RegExp(`( ass)|^(ass)|^(shit)|( shit)|^(bitch)|( bitch)|^(bastard)|( bastard)|^(anal)|( anal)|^(blowjob)|( blowjob)|^(cock)|( cock)|( feldercarb)|^(feldercarb)|( frack)|^(frack)|( skinjob)|^(skinjob)|( vulgacarb)|^(vulgacarb)`);
-  if (p.test(message)) {
-    return true;
+  messageArray = message.split(" ");
+  const p = RegExp(`( ass)|^(ass)|^(shit)|( shit)|^(bitch)|( bitch)|^(bastard)|( bastard)|^(anal)|( anal)|^(blowjob)|( blowjob)|^(cock)|( cock)|( fuck)|^(fuck)|( feldercarb)|^(feldercarb)|( frack)|^(frack)|( skinjob)|^(skinjob)|( vulgacarb)|^(vulgacarb)`);
+  for (const word of messageArray) {
+    if (p.test(word)) {
+      filterArray.push(word);
+    }
   }
-  else {
-    return false;
-  }
+  return filterArray;
 }
 
 /* Contact form submit */
@@ -83,14 +85,28 @@ form.addEventListener("submit", () => {
   /* https://stackoverflow.com/questions/10172499/mailto-using-javascript */
   /* Also took the window.location.href code from stack overflow */
   const message = document.querySelector("TEXTAREA").value;
-  if (!filter(message)) {
-    const subject = document.querySelector("#subject").value;
-    const name = document.querySelector("#name").value;
-    const emailString = `mailTo:kenji1@ualberta.ca?subject=${subject}&body=FROM:%20${name}%0D%0A${message}%0D%0A`
-    window.location.href = emailString;
+  const subject = document.querySelector("#subject").value;
+  const name = document.querySelector("#name").value;
+  const errorList = document.querySelector("#errorList");
+
+  if (filter(message).length > 0) {
+    event.preventDefault();
+    const errorMessage = document.createElement("P");
+    errorMessage.textContent = "Please ensure no profanity is included in your message. The filter picked up the following words:"
+    const newErrorList = document.createElement("UL");
+    newErrorList.setAttribute("ID", "errorList");
+    newErrorList.prepend(errorMessage);
+    const badWordArray = filter(message);
+    for (const word of badWordArray) {
+      const LI = document.createElement("LI");
+      LI.textContent = word;
+      newErrorList.append(LI)
+    }
+
+    form.replaceChild(newErrorList, errorList);
   }
   else {
-    event.preventDefault();
-    alert("Please be more professional in your request. No profanity please.");
+    const emailString = `mailTo:kenji1@ualberta.ca?subject=${subject}&body=FROM:%20${name}%0D%0A${message}%0D%0A`
+    window.location.href = emailString;
   }
 });
