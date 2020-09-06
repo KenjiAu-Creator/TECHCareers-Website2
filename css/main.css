@@ -295,9 +295,25 @@ a {
   width: 100px;
   height: auto;
 }
+#TreeHousePhotos {
+  display: grid;
+  grid-template-columns:
+  200px 100px;
+  grid-template-areas: 
+  "t1 t2";
+}
+#TreeHouse1 {
+  grid-area: t1;
+  width: 350px;
+}
+#TreeHouse2 {
+  grid-area: t2;
+  width: 300px;
+  align-self: end;
+}
 #chessPhotos {
   display: grid;
-  grid-template-columns: 150px 100px;
+  grid-template-columns: 250px 100px;
   grid-template-areas: 
   "c1 c2";
 }
