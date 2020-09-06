@@ -593,6 +593,16 @@ textarea {
   #OFB3 {
     width: 200px;
   }
+  #TreeHousePhotos {
+    grid-template-columns:
+    250px 100px;
+  }
+  #TreeHouse1 {
+    width: 350px;
+  }
+  #TreeHouse2 {
+    width: 300px;
+  }
   #chessPhotos {
     grid-template-columns: 
     275px 100px;
@@ -732,6 +742,17 @@ textarea {
   }
   #OFB3 {
     width: 300px;
+  }
+  #TreeHousePhotos {
+    margin-left: 100px;
+    grid-template-columns:
+    350px 100px;
+  }
+  #TreeHouse1 {
+    width: 500px;
+  }
+  #TreeHouse2 {
+    width: 450px;
   }
   #chessPhotos {
     margin-left: 100px;
