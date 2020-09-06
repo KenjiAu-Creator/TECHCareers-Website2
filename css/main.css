@@ -330,7 +330,7 @@ a {
 /* Using Grid design, Thank you Krizstina for the idea */
 .timeline {
   display: grid;
-  grid-template-columns: 48% 2% 50%;
+  grid-template-columns: 48% 2% 48%;
   grid-template-areas: 
   "1      circle-1 date-1"
   "date-2 circle-2 2"
@@ -394,7 +394,7 @@ a {
   padding-left: 30px;
 }
 .right {
-  padding-left: 15px;
+  padding-left: 25px;
 }
 #circle-1 {
   grid-area: circle-1;
