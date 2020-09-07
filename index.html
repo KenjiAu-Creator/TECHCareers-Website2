@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" description="">
   <title>Kenji's Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -14,7 +14,6 @@
 <body>
   <h1 class="lessInfo">Kenji's Portfolio</h1>
   <section id="landingPhoto">
-    <h2 class="lessInfo">Landing Photo</h2>
     <h2 id="landing">Hello, I'm Kenji Au.</h2>
     <a id="learn" class="button" href="#aboutMe">Learn More</a>
   </section>
@@ -65,9 +64,10 @@
   </section>
   <section id="information">
     <h2 id="projectsTitle">
-      <input id="projectsCB" class="checkbox" type="checkbox">
-      <i id="plus" class="fas fa-plus-square iconPlus"></i>
-      <i id="minus" class="fas fa-minus-square iconMinus iconHidden"></i>
+      <label for="projectHide" class="lessInfo">Hide Projects Checkbox</label>
+      <input id="projectHide" class="checkbox" type="checkbox">
+      <i class="fas fa-plus-square iconPlus"></i>
+      <i class="fas fa-minus-square iconMinus iconHidden"></i>
       Projects
     </h2>
     <section class="projects lessInfo">
@@ -153,9 +153,10 @@
       <span class="divider"></span>
     </section>
     <h2 id="education">
-      <input class="checkbox" type="checkbox" id="educationCB">
-      <i id="plus" class="fas fa-plus-square iconPlus"></i>
-      <i id="minus" class="fas fa-minus-square iconMinus iconHidden"></i>
+      <label for="educationHide" class="lessInfo">Hide Education checkbox</label>
+      <input id="educationHide" class="checkbox" type="checkbox">
+      <i class="fas fa-plus-square iconPlus"></i>
+      <i class="fas fa-minus-square iconMinus iconHidden"></i>
       Education
     </h2>
     <section class="education lessInfo">
@@ -225,9 +226,10 @@
       </section>
     </section>
     <h2 id="workExp">
-      <input class="checkbox" type="checkbox" id="workCB">
-      <i id="plus" class="fas fa-plus-square iconPlus"></i>
-      <i id="minus" class="fas fa-minus-square iconMinus iconHidden"></i>
+      <label for="workExpHide" class="lessInfo">Hide Work checkbox</label>
+      <input id="workExpHide" class="checkbox" type="checkbox">
+      <i class="fas fa-plus-square iconPlus"></i>
+      <i class="fas fa-minus-square iconMinus iconHidden"></i>
       Work Experience
     </h2>
     <section class="workExp lessInfo">
@@ -267,9 +269,10 @@
       </ul>
     </section>
     <h2 id="contact">
-      <input class="checkbox" type="checkbox" id="contactCB">
-      <i id="plus" class="fas fa-plus-square iconPlus"></i>
-      <i id="minus" class="fas fa-minus-square iconMinus iconHidden"></i>
+      <label for="contactHide" class="lessInfo">Hide Contact checkbox</label>
+      <input id="contactHide" class="checkbox" type="checkbox">
+      <i class="fas fa-plus-square iconPlus"></i>
+      <i class="fas fa-minus-square iconMinus iconHidden"></i>
       Get In Touch
     </h2>
     <section class="contact lessInfo">
@@ -289,6 +292,7 @@
           Message:
           <textarea id="message"></textarea>
         </label>
+        <label for="submit" class="lessInfo">Submit Button</label>
         <input id="submit" type="submit">
       </form>
       <section id="logos">
