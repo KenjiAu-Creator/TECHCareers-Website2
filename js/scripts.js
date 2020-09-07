@@ -24,18 +24,18 @@ projects.addEventListener("click", () => {
     checkboxProjects.checked = false;
   }
   if (checkboxProjects.checked) {
-    projectsSection.classList.add("lessInfo");
+    projectsSection.classList.remove("lessInfo");
     workSection.classList.add("lessInfo");
     contactSection.classList.add("lessInfo");
-    educationSection.classList.remove("lessInfo");
-    education.scrollIntoView();
+    educationSection.classList.add("lessInfo");
+    projects.scrollIntoView();
   }
   else {
     projectsSection.classList.add("lessInfo");
     workSection.classList.add("lessInfo");
     contactSection.classList.add("lessInfo");
     educationSection.classList.add("lessInfo");
-    education.scrollIntoView();
+    projects.scrollIntoView();
   }
 });
 /* Education Section */
@@ -58,7 +58,7 @@ education.addEventListener("click", () => {
     workSection.classList.add("lessInfo");
     contactSection.classList.add("lessInfo");
     educationSection.classList.add("lessInfo");
-    work.scrollIntoView();
+    education.scrollIntoView();
   }
 });
 /* Work experience section */
@@ -81,7 +81,7 @@ work.addEventListener("click", () => {
     workSection.classList.add("lessInfo");
     contactSection.classList.add("lessInfo");
     educationSection.classList.add("lessInfo");
-    education.scrollIntoView();
+    work.scrollIntoView();
   }
 });
 
