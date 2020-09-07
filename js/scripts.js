@@ -1,21 +1,19 @@
 // Document Element Initializations
-const education = document.querySelector("#education");
+/* Section Headers */
 const projects = document.querySelector("#projectsTitle");
+const education = document.querySelector("#education");
 const work = document.querySelector("#workExp");
 const contact = document.querySelector("#contact");
-const educationSection = document.querySelector(".education");
-const projectsSection = document.querySelector(".projects");
-const workSection = document.querySelector(".workExp");
-const contactSection = document.querySelector(".contact");
-const supervisorInfo = document.querySelector("#supervisor");
-const bartenderInfo = document.querySelector("#bartender");
-const researchInfo = document.querySelector("#research")
+
+/* Section title animations */
 const iconPluses = document.querySelectorAll(".iconPlus");
 const iconMinuses = document.querySelectorAll(".iconMinus");
 const checkBoxes = document.querySelectorAll(".checkbox")
+
 // Showing / Hiding main information sections
 /* Project section */
 projects.addEventListener("click", () => {
+  const projectsSection = document.querySelector(".projects");
   if (!checkBoxes[0].checked) {
     checkBoxes[0].checked = true;
   }
@@ -37,6 +35,7 @@ projects.addEventListener("click", () => {
 });
 /* Education Section */
 education.addEventListener("click", () => {
+  const educationSection = document.querySelector(".education");
   if (!checkBoxes[1].checked) {
     checkBoxes[1].checked = true;
   }
@@ -58,6 +57,7 @@ education.addEventListener("click", () => {
 });
 /* Work experience section */
 work.addEventListener("click", () => {
+  const workSection = document.querySelector(".workExp");
   if (!checkBoxes[2].checked) {
     checkBoxes[2].checked = true;
   }
@@ -80,6 +80,7 @@ work.addEventListener("click", () => {
 
 /* Contact Section */
 contact.addEventListener("click", () => {
+  const contactSection = document.querySelector(".contact");
   if (!checkBoxes[3].checked) {
     checkBoxes[3].checked = true;
   }
@@ -101,6 +102,11 @@ contact.addEventListener("click", () => {
 });
 
 /* Extra info in Work Experience to expand */
+/* Work Experience Content */
+const supervisorInfo = document.querySelector("#supervisor");
+const bartenderInfo = document.querySelector("#bartender");
+const researchInfo = document.querySelector("#research");
+
 supervisorInfo.addEventListener("click", () => {
   const supervisorExpand = document.querySelector("#supervisor-more");
   supervisorExpand.classList.remove("lessInfo");
@@ -147,6 +153,7 @@ form.addEventListener("submit", () => {
   const newErrorList = document.createElement("UL");
   newErrorList.setAttribute("ID", "errorList");
 
+  /* Check for empty input */
   if (name == "") {
     const errorMessage = document.createElement("P");
     errorMessage.textContent = "Please fill in your name.";
