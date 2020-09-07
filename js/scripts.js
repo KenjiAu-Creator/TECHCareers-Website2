@@ -152,6 +152,9 @@ form.addEventListener("submit", () => {
   const errorList = document.querySelector("#errorList");
   const newErrorList = document.createElement("UL");
   newErrorList.setAttribute("ID", "errorList");
+  const error = document.createElement("p");
+  error.textContent = "Errors detected, please fix the following errors before submission:";
+  newErrorList.append(error);
 
   /* Check for empty input */
   if (name == "") {
@@ -164,12 +167,12 @@ form.addEventListener("submit", () => {
     errorMessage.textContent = "Please fill in a subject.";
     newErrorList.append(errorMessage);
   }
-  if (message.value == "") {
+  if (message == "") {
     const errorMessage = document.createElement("P");
     errorMessage.textContent = "Please fill in a message.";
     newErrorList.append(errorMessage);
   }
-  
+  /* Check for profanity */
   if (filter(message).length > 0) {
     event.preventDefault();
     const errorMessage = document.createElement("P");
@@ -181,7 +184,9 @@ form.addEventListener("submit", () => {
       LI.textContent = word;
       newErrorList.append(LI)
     }
-
+  }
+  if (newErrorList.childElementCount > 0 ) {
+    event.preventDefault();
     form.replaceChild(newErrorList, errorList);
   }
   else {
