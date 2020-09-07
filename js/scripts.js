@@ -10,22 +10,19 @@ const contactSection = document.querySelector(".contact");
 const supervisorInfo = document.querySelector("#supervisor");
 const bartenderInfo = document.querySelector("#bartender");
 const researchInfo = document.querySelector("#research")
-const checkboxProjects = document.querySelector("#projectsCB");
-const checkboxEducation = document.querySelector("#educationCB");
-const checkboxWork = document.querySelector("#workCB");
-const checkboxContact = document.querySelector("#contactCB");
 const iconPluses = document.querySelectorAll(".iconPlus");
 const iconMinuses = document.querySelectorAll(".iconMinus");
+const checkBoxes = document.querySelectorAll(".checkbox")
 // Showing / Hiding main information sections
 /* Project section */
 projects.addEventListener("click", () => {
-  if (!checkboxProjects.checked) {
-    checkboxProjects.checked = true;
+  if (!checkBoxes[0].checked) {
+    checkBoxes[0].checked = true;
   }
   else {
-    checkboxProjects.checked = false;
+    checkBoxes[0].checked = false;
   }
-  if (checkboxProjects.checked) {
+  if (checkBoxes[0].checked) {
     projectsSection.classList.remove("lessInfo");
     iconPluses[0].classList.add("iconHidden");
     iconMinuses[0].classList.remove("iconHidden");
@@ -40,13 +37,13 @@ projects.addEventListener("click", () => {
 });
 /* Education Section */
 education.addEventListener("click", () => {
-  if (!checkboxEducation.checked) {
-    checkboxEducation.checked = true;
+  if (!checkBoxes[1].checked) {
+    checkBoxes[1].checked = true;
   }
   else {
-    checkboxEducation.checked = false;
+    checkBoxes[1].checked = false;
   }
-  if (checkboxEducation.checked) {
+  if (checkBoxes[1].checked) {
     educationSection.classList.remove("lessInfo");
     iconPluses[1].classList.add("iconHidden");
     iconMinuses[1].classList.remove("iconHidden");
@@ -61,13 +58,13 @@ education.addEventListener("click", () => {
 });
 /* Work experience section */
 work.addEventListener("click", () => {
-  if (!checkboxWork.checked) {
-    checkboxWork.checked = true;
+  if (!checkBoxes[2].checked) {
+    checkBoxes[2].checked = true;
   }
   else {
-    checkboxWork.checked = false;
+    checkBoxes[2].checked = false;
   }
-  if (checkboxWork.checked) {
+  if (checkBoxes[2].checked) {
     workSection.classList.remove("lessInfo");
     iconPluses[2].classList.add("iconHidden");
     iconMinuses[2].classList.remove("iconHidden");
@@ -83,13 +80,13 @@ work.addEventListener("click", () => {
 
 /* Contact Section */
 contact.addEventListener("click", () => {
-  if (!checkboxContact.checked) {
-    checkboxContact.checked = true;
+  if (!checkBoxes[3].checked) {
+    checkBoxes[3].checked = true;
   }
   else {
-    checkboxContact.checked = false;
+    checkBoxes[3].checked = false;
   }
-  if (checkboxContact.checked) {
+  if (checkBoxes[3].checked) {
     contactSection.classList.remove("lessInfo");
     iconPluses[3].classList.add("iconHidden");
     iconMinuses[3].classList.remove("iconHidden");
