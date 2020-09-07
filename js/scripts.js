@@ -10,41 +10,106 @@ const contactSection = document.querySelector(".contact");
 const supervisorInfo = document.querySelector("#supervisor");
 const bartenderInfo = document.querySelector("#bartender");
 const researchInfo = document.querySelector("#research")
-
+const checkboxProjects = document.querySelector("#projectsCB");
+const checkboxEducation = document.querySelector("#educationCB");
+const checkboxWork = document.querySelector("#workCB");
+const checkboxContact = document.querySelector("#contactCB");
 // Showing / Hiding main information sections
+/* Project section */
 projects.addEventListener("click", () => {
-  projectsSection.classList.remove("lessInfo");
-  workSection.classList.add("lessInfo");
-  contactSection.classList.add("lessInfo");
-  educationSection.classList.add("lessInfo");
-  projects.scrollIntoView();
+  if (!checkboxProjects.checked) {
+    checkboxProjects.checked = true;
+  }
+  else {
+    checkboxProjects.checked = false;
+  }
+  if (checkboxProjects.checked) {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.add("lessInfo");
+    contactSection.classList.add("lessInfo");
+    educationSection.classList.remove("lessInfo");
+    education.scrollIntoView();
+  }
+  else {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.add("lessInfo");
+    contactSection.classList.add("lessInfo");
+    educationSection.classList.add("lessInfo");
+    education.scrollIntoView();
+  }
 });
-
+/* Education Section */
 education.addEventListener("click", () => {
-  projectsSection.classList.add("lessInfo");
-  workSection.classList.add("lessInfo");
-  contactSection.classList.add("lessInfo");
-  educationSection.classList.remove("lessInfo");
-  education.scrollIntoView();
+  if (!checkboxEducation.checked) {
+    checkboxEducation.checked = true;
+  }
+  else {
+    checkboxEducation.checked = false;
+  }
+  if (checkboxEducation.checked) {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.remove("lessInfo");
+    contactSection.classList.add("lessInfo");
+    educationSection.classList.add("lessInfo");
+    education.scrollIntoView();
+  }
+  else {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.add("lessInfo");
+    contactSection.classList.add("lessInfo");
+    educationSection.classList.add("lessInfo");
+    work.scrollIntoView();
+  }
 });
-
+/* Work experience section */
 work.addEventListener("click", () => {
-  projectsSection.classList.add("lessInfo");
-  workSection.classList.remove("lessInfo");
-  contactSection.classList.add("lessInfo");
-  educationSection.classList.add("lessInfo");
-  work.scrollIntoView();
+  if (!checkboxWork.checked) {
+    checkboxWork.checked = true;
+  }
+  else {
+    checkboxWork.checked = false;
+  }
+  if (checkboxWork.checked) {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.remove("lessInfo");
+    contactSection.classList.add("lessInfo");
+    educationSection.classList.add("lessInfo");
+    work.scrollIntoView();
+  }
+  else {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.add("lessInfo");
+    contactSection.classList.add("lessInfo");
+    educationSection.classList.add("lessInfo");
+    education.scrollIntoView();
+  }
 });
 
+/* Contact Section */
 contact.addEventListener("click", () => {
-  projectsSection.classList.add("lessInfo");
-  workSection.classList.add("lessInfo");
-  contactSection.classList.remove("lessInfo");
-  educationSection.classList.add("lessInfo");
-  contact.scrollIntoView();
+  if (!checkboxContact.checked) {
+    checkboxContact.checked = true;
+  }
+  else {
+    checkboxContact.checked = false;
+  }
+  if (checkboxContact.checked) {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.add("lessInfo");
+    contactSection.classList.remove("lessInfo");
+    educationSection.classList.add("lessInfo");
+    contact.scrollIntoView();
+  }
+  else {
+    projectsSection.classList.add("lessInfo");
+    workSection.classList.add("lessInfo");
+    contactSection.classList.add("lessInfo");
+    educationSection.classList.add("lessInfo");
+    contact.scrollIntoView();
+  }
 });
 
-/* Extra info in Work Exp */
+/* Extra info in Work Experience to expand */
 supervisorInfo.addEventListener("click", () => {
   const supervisorExpand = document.querySelector("#supervisor-more");
   supervisorExpand.classList.remove("lessInfo");

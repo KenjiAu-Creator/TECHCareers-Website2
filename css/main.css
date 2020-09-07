@@ -233,6 +233,10 @@ ul {
   font-size: 23px;
   margin-bottom: 5px;
 }
+.checkbox {
+  display: inline;
+  visibility: hidden;
+}
 .projectButtons {
   margin: 15px 20px;
 }
