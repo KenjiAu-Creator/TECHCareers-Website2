@@ -14,6 +14,8 @@ const checkboxProjects = document.querySelector("#projectsCB");
 const checkboxEducation = document.querySelector("#educationCB");
 const checkboxWork = document.querySelector("#workCB");
 const checkboxContact = document.querySelector("#contactCB");
+const iconPluses = document.querySelectorAll(".iconPlus");
+const iconMinuses = document.querySelectorAll(".iconMinus");
 // Showing / Hiding main information sections
 /* Project section */
 projects.addEventListener("click", () => {
@@ -25,16 +27,14 @@ projects.addEventListener("click", () => {
   }
   if (checkboxProjects.checked) {
     projectsSection.classList.remove("lessInfo");
-    workSection.classList.add("lessInfo");
-    contactSection.classList.add("lessInfo");
-    educationSection.classList.add("lessInfo");
+    iconPluses[0].classList.add("iconHidden");
+    iconMinuses[0].classList.remove("iconHidden");
     projects.scrollIntoView();
   }
   else {
     projectsSection.classList.add("lessInfo");
-    workSection.classList.add("lessInfo");
-    contactSection.classList.add("lessInfo");
-    educationSection.classList.add("lessInfo");
+    iconPluses[0].classList.remove("iconHidden");
+    iconMinuses[0].classList.add("iconHidden");
     projects.scrollIntoView();
   }
 });
@@ -47,17 +47,15 @@ education.addEventListener("click", () => {
     checkboxEducation.checked = false;
   }
   if (checkboxEducation.checked) {
-    projectsSection.classList.add("lessInfo");
-    workSection.classList.remove("lessInfo");
-    contactSection.classList.add("lessInfo");
-    educationSection.classList.add("lessInfo");
+    educationSection.classList.remove("lessInfo");
+    iconPluses[1].classList.add("iconHidden");
+    iconMinuses[1].classList.remove("iconHidden");
     education.scrollIntoView();
   }
   else {
-    projectsSection.classList.add("lessInfo");
-    workSection.classList.add("lessInfo");
-    contactSection.classList.add("lessInfo");
     educationSection.classList.add("lessInfo");
+    iconPluses[1].classList.remove("iconHidden");
+    iconMinuses[1].classList.add("iconHidden");
     education.scrollIntoView();
   }
 });
@@ -70,17 +68,15 @@ work.addEventListener("click", () => {
     checkboxWork.checked = false;
   }
   if (checkboxWork.checked) {
-    projectsSection.classList.add("lessInfo");
     workSection.classList.remove("lessInfo");
-    contactSection.classList.add("lessInfo");
-    educationSection.classList.add("lessInfo");
+    iconPluses[2].classList.add("iconHidden");
+    iconMinuses[2].classList.remove("iconHidden");
     work.scrollIntoView();
   }
   else {
-    projectsSection.classList.add("lessInfo");
     workSection.classList.add("lessInfo");
-    contactSection.classList.add("lessInfo");
-    educationSection.classList.add("lessInfo");
+    iconPluses[2].classList.remove("iconHidden");
+    iconMinuses[2].classList.add("iconHidden");
     work.scrollIntoView();
   }
 });
@@ -94,17 +90,15 @@ contact.addEventListener("click", () => {
     checkboxContact.checked = false;
   }
   if (checkboxContact.checked) {
-    projectsSection.classList.add("lessInfo");
-    workSection.classList.add("lessInfo");
     contactSection.classList.remove("lessInfo");
-    educationSection.classList.add("lessInfo");
+    iconPluses[3].classList.add("iconHidden");
+    iconMinuses[3].classList.remove("iconHidden");
     contact.scrollIntoView();
   }
   else {
-    projectsSection.classList.add("lessInfo");
-    workSection.classList.add("lessInfo");
     contactSection.classList.add("lessInfo");
-    educationSection.classList.add("lessInfo");
+    iconPluses[3].classList.remove("iconHidden");
+    iconMinuses[3].classList.add("iconHidden");
     contact.scrollIntoView();
   }
 });

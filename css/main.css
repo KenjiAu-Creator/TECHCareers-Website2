@@ -223,6 +223,13 @@ ul {
 .contact {
   grid-area: contact-more;
 }
+.iconPlus,
+.iconMinus {
+  display: inline !important;
+}
+.iconHidden {
+  display: none !important;
+}
 /* Projects Expanded Section */
 #projectsHead {
   font-size: 20px;
