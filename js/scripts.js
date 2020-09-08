@@ -123,7 +123,7 @@ researchInfo.addEventListener("click", () => {
 });
 
 /* Profanity filter */
-function filter(message) {
+function Filter(message) {
   /* Check message for any profanity
    * If it contains a swear word then return true
    * else return false
@@ -173,12 +173,12 @@ form.addEventListener("submit", () => {
     newErrorList.append(errorMessage);
   }
   /* Check for profanity */
-  if (filter(message).length > 0) {
+  if (Filter(message).length > 0) {
     event.preventDefault();
     const errorMessage = document.createElement("P");
     errorMessage.textContent = "Please ensure no profanity is included in your message. The filter picked up the following words:";
     newErrorList.append(errorMessage);
-    const badWordArray = filter(message);
+    const badWordArray = Filter(message);
     for (const word of badWordArray) {
       const LI = document.createElement("LI");
       LI.textContent = word;
