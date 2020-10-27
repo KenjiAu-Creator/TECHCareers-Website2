@@ -120,6 +120,7 @@ body {
 }
 #learn {
   visibility: hidden;
+  text-align: center;
 }
 /* About Me Section */
 #aboutMe {
@@ -262,6 +263,19 @@ a {
   height: 2px;
   background-color: #69B7BF;
   margin: 30px 20px;
+}
+#charityWebsitePhotos {
+  display: grid;
+  grid-template-columns: 150px 100px;
+  grid-template-areas: 
+  "charity1 charity2";
+}
+#charity1 {
+  grid-area: charity1;
+}
+#charity2 {
+  align-self: end;
+  grid-area: charity2;
 }
 #privateEventPhotos {
   display: grid;
@@ -588,6 +602,15 @@ textarea {
     margin-right: auto;
     margin-left: auto;
   }
+  #charityWebsitePhotos {
+    grid-template-columns: 275px 100px;
+  }
+  #charity1 {
+    width: 345px;
+  }
+  #charity2 {
+    width: 275px;
+  }
   #privateEventPhotos {
     display: grid;
     grid-template-columns: 275px 100px;
@@ -731,6 +754,16 @@ textarea {
   }
   #information > section > p {
     font-size: 20px;
+  }
+  #charityWebsitePhotos {
+    margin-left: 100px;
+    grid-template-columns: 400px 100px;
+  }
+  #charity1 {
+    width: 500px;
+  }
+  #charity2 {
+    width: 400px;
   }
   #privateEventPhotos {
     margin-left: 100px;
